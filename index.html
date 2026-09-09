@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Lagnadeep Studio - Premium bridal couture, handwoven Bandhani textiles & luxury Indian fashion since 1982. 4th generation family-run bridal studio in Mumbai.">
+<meta name="keywords" content="bridal lehenga,bandhani,banarasi silk,kanjivaram saree,Indian bridal wear,luxury fashion,Mumbai bridal studio">
+<meta property="og:title" content="Lagnadeep Studio | Luxury Bridal Couture Since 1982">
+<meta property="og:description" content="4th generation family-run bridal studio. Bandhani textiles, handwoven fabrics & bridal couture.">
+<meta property="og:type" content="website">
+<title>Lagnadeep Studio | Luxury Bridal Couture Since 1982</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--maroon:#6B1D2A;--maroon-deep:#4A0E1A;--maroon-light:#8B2E3D;
+--gold:#C4A35A;--gold-light:#D4B96A;--gold-dark:#A8883A;--gold-glow:rgba(196,163,90,.12);
+--ivory:#FAFAF7;--cream:#F3EDE4;--champagne:#E8DDD3;
+--dark:#0D0D0D;--dark-soft:#1A1A1A;--dark-card:#151515;
+--text:#111;--text-2:#555;--text-3:#999;
+--white:#FFF;--overlay:rgba(13,13,13,.7);
+--ok:#2D8F5E;--err:#C0392B;
+--dsp:'Playfair Display',Georgia,serif;
+--bd:'Inter',-apple-system,sans-serif;
+--ease:cubic-bezier(.25,.46,.45,.94);
+--expo:cubic-bezier(.16,1,.3,1);
+--r:6px;
+}
+html{scroll-behavior:smooth;font-size:16px;overflow-x:hidden}
+body{font-family:var(--bd);color:var(--text);background:var(--ivory);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;object-fit:cover}
+a{text-decoration:none;color:inherit}
+button{border:none;background:none;cursor:pointer;font-family:inherit}
+ul,ol{list-style:none}
+input,select,textarea{font-family:inherit;border:none;outline:none}
+h1,h2,h3,h4,h5,h6{font-family:var(--dsp);font-weight:500;line-height:1.15}
+::selection{background:var(--gold);color:var(--white)}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--cream)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+.ic{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;flex-shrink:0}
+.ic svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.ic-sm{width:16px;height:16px}.ic-lg{width:32px;height:32px}.ic-xl{width:48px;height:48px}
+.ic-fill svg{fill:currentColor;stroke:none}
+/* LOADER */
+.loader{position:fixed;inset:0;background:var(--dark);z-index:100000;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .8s ease,visibility .8s ease}
+.loader.out{opacity:0;visibility:hidden;pointer-events:none}
+.loader h1{font-family:var(--dsp);font-size:3rem;color:var(--gold);letter-spacing:.4em;text-transform:uppercase;font-weight:400;animation:ldPulse 1.5s ease-in-out infinite}
+.loader small{color:rgba(255,255,255,.2);font-size:.55rem;letter-spacing:.7em;text-transform:uppercase;margin-top:6px;font-weight:300}
+.loader-bar{width:180px;height:1px;background:rgba(196,163,90,.1);margin-top:44px;overflow:hidden;border-radius:1px}
+.loader-bar span{display:block;width:0;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));animation:ldBar 2.2s ease-in-out forwards}
+@keyframes ldPulse{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes ldBar{to{width:100%}}
+/* ANNOUNCEMENT */
+.ann{background:var(--dark);color:rgba(255,255,255,.5);text-align:center;padding:11px 20px;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;position:relative;z-index:999;font-weight:400;overflow:hidden}
+.ann::after{content:'';position:absolute;top:0;left:-100%;width:200%;height:100%;background:linear-gradient(90deg,transparent,rgba(196,163,90,.06),transparent);animation:annShine 10s infinite}
+@keyframes annShine{0%{left:-100%}100%{left:100%}}
+/* NAV */
+nav{position:sticky;top:0;z-index:9999;background:rgba(250,250,247,.92);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);border-bottom:1px solid rgba(0,0,0,.03);transition:all .5s var(--ease)}
+nav.scrolled{box-shadow:0 1px 30px rgba(0,0,0,.06);background:rgba(250,250,247,.98)}
+.nav-c{max-width:1440px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;flex-direction:column;align-items:center;gap:1px;cursor:pointer}
+.brand b{font-family:var(--dsp);font-size:1.4rem;letter-spacing:.35em;text-transform:uppercase;color:var(--maroon);font-weight:500}
+.brand small{font-size:.42rem;letter-spacing:.6em;text-transform:uppercase;color:var(--gold);font-weight:400}
+.nav-links{display:flex;gap:36px;align-items:center}
+.nav-a{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--text);position:relative;padding:4px 0;transition:all .3s ease;font-weight:500;cursor:pointer}
+.nav-a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;background:var(--gold);transition:width .4s var(--ease)}
+.nav-a:hover{color:var(--maroon)}.nav-a:hover::after{width:100%}
+.nav-a.has-dd{display:flex;align-items:center;gap:5px}
+.dd-arr{width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin-top:-3px;transition:all .3s ease}
+.nav-a.has-dd:hover .dd-arr{transform:rotate(-135deg)}
+.nav-acts{display:flex;align-items:center;gap:2px}
+.nav-btn{position:relative;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:all .3s ease;color:var(--text)}
+.nav-btn:hover{background:var(--gold-glow);color:var(--maroon)}
+.badge{position:absolute;top:5px;right:5px;font-size:.5rem;width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600}
+.badge-m{background:var(--maroon);color:var(--white)}.badge-g{background:var(--gold);color:var(--white)}
+.ham{display:none;flex-direction:column;gap:5px;width:22px;cursor:pointer;padding:10px 0}
+.ham span{width:100%;height:1.5px;background:var(--text);transition:all .5s var(--ease);border-radius:1px}
+.ham.on span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
+.ham.on span:nth-child(2){opacity:0}
+.ham.on span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
+/* Mega Menu */
+.mega{position:absolute;top:100%;left:0;right:0;background:var(--white);border-top:1px solid rgba(0,0,0,.03);padding:50px 0;opacity:0;visibility:hidden;transform:translateY(-8px);transition:all .5s var(--ease);box-shadow:0 8px 40px rgba(0,0,0,.1)}
+.nav-a.has-dd:hover .mega{opacity:1;visibility:visible;transform:translateY(0)}
+.mega-in{max-width:1440px;margin:0 auto;padding:0 48px;display:grid;grid-template-columns:repeat(4,1fr);gap:48px}
+.mega-col h4{font-size:.58rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;font-family:var(--bd);font-weight:600}
+.mega-col a{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--text-2);padding:9px 0;transition:all .3s ease;font-weight:400;cursor:pointer}
+.mega-col a:hover{color:var(--maroon);padding-left:6px}
+.mega-img{position:relative;border-radius:var(--r);overflow:hidden;height:260px}
+.mega-img img{width:100%;height:100%;transition:transform .8s var(--ease)}
+.mega-img:hover img{transform:scale(1.06)}
+.mega-img-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.7),transparent 60%)}
+.mega-img-ct{position:absolute;bottom:24px;left:24px;z-index:2}
+.mega-img-ct small{font-size:.52rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold)}
+.mega-img-ct h3{font-size:1.1rem;color:var(--white);margin-top:4px;font-weight:500}
+/* Mobile Nav */
+.mob-nav{position:fixed;inset:0;background:var(--ivory);z-index:99998;transform:translateX(100%);transition:transform .5s var(--ease);padding:90px 32px 32px;overflow-y:auto}
+.mob-nav.on{transform:translateX(0)}
+.mob-close{position:absolute;top:24px;right:24px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:all .3s ease}
+.mob-close:hover{background:var(--cream)}
+.mob-a{display:block;font-family:var(--dsp);font-size:1.6rem;color:var(--text);padding:16px 0;border-bottom:1px solid rgba(0,0,0,.04);font-weight:500}
+.mob-a:hover{color:var(--maroon)}
+.mob-sub{padding-left:20px}
+.mob-sub a{font-size:.88rem;font-family:var(--bd);padding:10px 0;display:flex;align-items:center;gap:8px;color:var(--text-2);font-weight:400;cursor:pointer}
+/* HERO */
+.hero{position:relative;height:100vh;min-height:740px;overflow:hidden;background:var(--dark)}
+.hero-slides{position:absolute;inset:0}
+.h-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease}
+.h-slide.on{opacity:1}
+.h-slide-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.15);transition:transform 18s linear}
+.h-slide.on .h-slide-bg{transform:scale(1)}
+.h-ov{position:absolute;inset:0;background:linear-gradient(160deg,rgba(74,14,26,.55),rgba(13,13,13,.45) 50%,rgba(13,13,13,.6))}
+.h-vig{position:absolute;inset:0;box-shadow:inset 0 0 200px 40px rgba(0,0,0,.3)}
+.hero-pts{position:absolute;inset:0;z-index:1;pointer-events:none}
+.h-pt{position:absolute;width:2px;height:2px;background:var(--gold);border-radius:50%;opacity:0;animation:ptF 8s ease-in-out infinite}
+@keyframes ptF{0%{opacity:0;transform:translateY(100vh) rotate(0)}25%{opacity:.6}75%{opacity:.2}100%{opacity:0;transform:translateY(-20vh) rotate(180deg)}}
+.hero-ct{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:2;padding:0 24px}
+.h-ey{font-size:.6rem;letter-spacing:.7em;text-transform:uppercase;color:var(--gold);margin-bottom:28px;opacity:0;animation:cinUp 1.2s .6s var(--expo) forwards;font-weight:400;display:flex;align-items:center;gap:16px}
+.h-ey .ln{width:40px;height:1px;background:var(--gold);opacity:.4}
+.hero-title{font-family:var(--dsp);font-size:clamp(2.4rem,6.5vw,5.5rem);color:var(--white);line-height:1.05;max-width:900px;font-weight:500;opacity:0;animation:heroIn 1.4s .8s var(--expo) forwards}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:.92rem;color:rgba(255,255,255,.6);margin-top:28px;max-width:500px;opacity:0;animation:cinUp 1.2s 1s var(--expo) forwards;font-weight:300;line-height:1.9;letter-spacing:.02em}
+.hero-btns{display:flex;gap:16px;margin-top:48px;opacity:0;animation:cinUp 1.2s 1.2s var(--expo) forwards;flex-wrap:wrap;justify-content:center}
+.h-dots{position:absolute;bottom:48px;left:50%;transform:translateX(-50%);display:flex;gap:14px;z-index:3}
+.h-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.2);cursor:pointer;transition:all .5s var(--ease)}
+.h-dot.on{background:var(--gold);width:40px;border-radius:5px}
+.scroll-ind{position:absolute;bottom:48px;right:48px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;color:rgba(255,255,255,.3);font-size:.48rem;letter-spacing:.35em;text-transform:uppercase;font-weight:400}
+.scroll-ln{width:1px;height:50px;background:rgba(255,255,255,.1);position:relative;overflow:hidden}
+.scroll-ln::after{content:'';position:absolute;top:-100%;left:0;width:100%;height:100%;background:var(--gold);animation:scrLn 2.2s ease-in-out infinite}
+@keyframes scrLn{0%{top:-100%}50%{top:100%}100%{top:100%}}
+@keyframes cinUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heroIn{from{opacity:0;transform:translateY(60px) scale(.96);filter:blur(12px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 44px;font-size:.65rem;letter-spacing:.28em;text-transform:uppercase;font-weight:500;border-radius:var(--r);transition:all .5s var(--ease);position:relative;overflow:hidden;white-space:nowrap;cursor:pointer}
+.btn .ic{width:15px;height:15px}
+.btn-p{background:var(--maroon);color:var(--white)}.btn-p:hover{background:var(--maroon-deep);transform:translateY(-3px);box-shadow:0 8px 30px rgba(107,29,42,.35)}
+.btn-o{border:1.5px solid var(--gold);color:var(--gold)}.btn-o:hover{background:var(--gold);color:var(--white)}
+.btn-od{border:1.5px solid var(--text);color:var(--text)}.btn-od:hover{background:var(--text);color:var(--white)}
+.btn-g{background:var(--gold);color:var(--white)}.btn-g:hover{background:var(--gold-dark);transform:translateY(-3px)}
+.btn-ghost{color:var(--gold);padding:8px 0;letter-spacing:.2em;display:inline-flex;align-items:center;gap:8px;font-size:.68rem;cursor:pointer;font-weight:500;text-transform:uppercase}
+.btn-ghost .ic{width:14px;height:14px;transition:all .3s ease}.btn-ghost:hover .ic{transform:translateX(5px)}
+/* SECTIONS */
+.sec{padding:120px 0}
+.sec-h{text-align:center;margin-bottom:72px}
+.sec-ey{font-size:.56rem;letter-spacing:.55em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:block;font-weight:500}
+.sec-t{font-family:var(--dsp);font-size:clamp(1.9rem,4vw,3rem);color:var(--text);margin-bottom:18px;font-weight:500}
+.sec-d{font-size:.88rem;color:var(--text-2);max-width:500px;margin:0 auto;line-height:1.9;font-weight:300}
+.con{max-width:1440px;margin:0 auto;padding:0 48px}
+/* TRUST */
+.trust{background:var(--white);padding:30px 0;border-bottom:1px solid rgba(0,0,0,.03)}
+.trust-row{display:flex;justify-content:center;gap:64px;flex-wrap:wrap}
+.trust-i{display:flex;align-items:center;gap:14px;font-size:.74rem;color:var(--text-2);font-weight:400}
+.trust-i .ic{color:var(--gold)}
+/* BRAND STORY */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
+.story-img{position:relative;height:680px;overflow:hidden;border-radius:var(--r)}
+.story-img img{width:100%;height:100%;transition:transform .8s var(--ease)}
+.story-img:hover img{transform:scale(1.04)}
+.story-img::before{content:'';position:absolute;top:-24px;left:-24px;width:140px;height:140px;border:1px solid var(--gold);border-radius:var(--r);opacity:.1;z-index:2}
+.story-ct .sec-ey{text-align:left}.story-ct .sec-t{text-align:left}
+.story-text{color:var(--text-2);line-height:2.1;margin:28px 0;font-weight:300;font-size:.9rem}
+.story-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px;padding-top:48px;border-top:1px solid rgba(0,0,0,.05)}
+.stat{text-align:center}
+.stat h3{font-family:var(--dsp);font-size:2.4rem;color:var(--maroon);font-weight:500}
+.stat p{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--text-3);margin-top:4px;font-weight:500}
+/* MARQUEE */
+.marq{background:var(--maroon-deep);padding:20px 0;overflow:hidden;white-space:nowrap}
+.marq-track{display:inline-flex;animation:marq 35s linear infinite}
+.marq-i{display:inline-flex;align-items:center;gap:28px;padding:0 36px;font-family:var(--dsp);font-size:1.15rem;color:rgba(255,255,255,.2);font-weight:400;letter-spacing:.08em;font-style:italic}
+.marq-i .dot{width:4px;height:4px;border-radius:50%;background:var(--gold);opacity:.35}
+@keyframes marq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+/* COLLECTIONS */
+.col-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.col-card{position:relative;height:580px;overflow:hidden;border-radius:var(--r);cursor:pointer}
+.col-card img{position:absolute;inset:0;width:100%;height:100%;transition:transform 1s var(--ease)}
+.col-card:hover img{transform:scale(1.08)}
+.col-card-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(13,13,13,.9) 0%,rgba(13,13,13,.15) 45%,transparent);z-index:1}
+.col-card-ct{position:absolute;bottom:0;left:0;right:0;padding:44px;z-index:2;transform:translateY(10px);transition:all .5s var(--ease)}
+.col-card:hover .col-card-ct{transform:translateY(0)}
+.col-card-cat{font-size:.5rem;letter-spacing:.45em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.col-card-t{font-family:var(--dsp);font-size:1.8rem;color:var(--white);margin-top:10px;font-weight:500}
+.col-card-n{font-size:.72rem;color:rgba(255,255,255,.35);margin-top:6px;font-weight:300}
+.col-card-lnk{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;margin-top:20px;opacity:0;transform:translateY(10px);transition:all .5s var(--ease);font-weight:500}
+.col-card-lnk .ic{width:14px;height:14px;transition:all .3s ease}
+.col-card:hover .col-card-lnk{opacity:1;transform:translateY(0)}
+.col-card:hover .col-card-lnk .ic{transform:translateX(5px)}
+/* PRODUCTS */
+.p-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.p-card{position:relative;background:var(--white);border-radius:var(--r);overflow:hidden;transition:all .5s var(--ease)}
+.p-card:hover{transform:translateY(-8px);box-shadow:0 8px 40px rgba(0,0,0,.1)}
+.p-img{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--cream)}
+.p-img img{width:100%;height:100%;transition:transform .8s var(--ease)}
+.p-card:hover .p-img img{transform:scale(1.07)}
+.p-badge{position:absolute;top:16px;left:16px;background:var(--maroon);color:var(--white);font-size:.5rem;letter-spacing:.18em;text-transform:uppercase;padding:6px 16px;border-radius:var(--r);z-index:2;font-weight:500}
+.p-acts{position:absolute;top:16px;right:16px;display:flex;flex-direction:column;gap:8px;opacity:0;transform:translateX(14px);transition:all .5s var(--ease);z-index:2}
+.p-card:hover .p-acts{opacity:1;transform:translateX(0)}
+.p-act{width:42px;height:42px;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all .3s ease;box-shadow:0 2px 14px rgba(0,0,0,.1);color:var(--text)}
+.p-act:hover{background:var(--maroon);color:var(--white)}
+.p-act .ic{width:16px;height:16px}
+.p-act.wl{color:var(--maroon)}.p-act.wl .ic svg{fill:var(--maroon)}
+.p-qv{position:absolute;bottom:0;left:0;right:0;background:rgba(107,29,42,.96);backdrop-filter:blur(4px);color:var(--white);text-align:center;padding:15px;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;transform:translateY(100%);transition:all .5s var(--ease);font-weight:500;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}
+.p-card:hover .p-qv{transform:translateY(0)}
+.p-info{padding:22px}
+.p-cat{font-size:.52rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.p-name{font-family:var(--dsp);font-size:1.05rem;color:var(--text);margin-top:8px;transition:all .3s ease;font-weight:500;cursor:pointer}
+.p-name:hover{color:var(--maroon)}
+.p-fab{font-size:.74rem;color:var(--text-3);margin-top:5px;font-weight:300}
+.p-price-row{display:flex;align-items:center;gap:10px;margin-top:12px}
+.p-price{font-size:1.05rem;color:var(--maroon);font-weight:600}
+.p-price-og{font-size:.8rem;color:var(--text-3);text-decoration:line-through;font-weight:300}
+.p-stars{display:flex;align-items:center;gap:4px;margin-top:10px}
+.p-stars .stars{color:var(--gold);display:flex;gap:1px}
+.p-stars .stars .ic{width:12px;height:12px}.p-stars .stars .ic svg{fill:var(--gold);stroke:var(--gold);stroke-width:1}
+.p-stars span{font-size:.68rem;color:var(--text-3);font-weight:300}
+/* VIDEO */
+.vid{position:relative;height:65vh;min-height:440px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.vid img{position:absolute;inset:0;width:100%;height:100%}
+.vid-ov{position:absolute;inset:0;background:rgba(13,13,13,.6);z-index:1}
+.vid-ct{position:relative;z-index:2;text-align:center}
+.play{width:90px;height:90px;border-radius:50%;border:2px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;cursor:pointer;transition:all .5s var(--ease);color:var(--white);position:relative}
+.play::before{content:'';position:absolute;inset:-12px;border-radius:50%;border:1px solid rgba(255,255,255,.08);animation:playP 2s ease-out infinite}
+.play:hover{border-color:var(--gold);background:rgba(196,163,90,.12);transform:scale(1.08)}
+@keyframes playP{0%{transform:scale(1);opacity:.5}100%{transform:scale(1.4);opacity:0}}
+/* TESTIMONIALS */
+.test{background:var(--dark);color:var(--white)}
+.test .sec-t{color:var(--white)}.test .sec-d{color:rgba(255,255,255,.35)}
+.test-slider{position:relative;overflow:hidden;max-width:800px;margin:0 auto}
+.test-track{display:flex;transition:transform .7s var(--ease)}
+.test-slide{min-width:100%;text-align:center;padding:0 24px}
+.test-qi{color:var(--gold);opacity:.2;margin-bottom:26px}
+.test-strs{color:var(--gold);display:flex;justify-content:center;gap:3px;margin-bottom:28px}
+.test-strs .ic{width:15px;height:15px}.test-strs .ic svg{fill:var(--gold);stroke:var(--gold);stroke-width:1}
+.test-txt{font-family:var(--dsp);font-size:1.4rem;line-height:1.95;color:rgba(255,255,255,.85);font-style:italic;font-weight:400}
+.test-auth{margin-top:38px}
+.test-auth b{font-size:.85rem;color:var(--gold);letter-spacing:.12em;font-weight:500;display:block}
+.test-auth small{font-size:.72rem;color:rgba(255,255,255,.25);font-weight:300}
+.test-nav{display:flex;justify-content:center;gap:16px;margin-top:52px}
+.test-nav button{width:50px;height:50px;border:1px solid rgba(255,255,255,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.35);transition:all .3s ease}
+.test-nav button:hover{border-color:var(--gold);color:var(--gold)}
+/* BRIDAL LOOKS */
+.looks{background:linear-gradient(180deg,var(--cream),var(--ivory))}
+.looks-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.look{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:var(--r);overflow:hidden;background:var(--white);box-shadow:0 2px 16px rgba(0,0,0,.05)}
+.look:nth-child(even){direction:rtl}.look:nth-child(even)>*{direction:ltr}
+.look-img{aspect-ratio:3/4;overflow:hidden}
+.look-img img{width:100%;height:100%;transition:transform .8s var(--ease)}
+.look:hover .look-img img{transform:scale(1.06)}
+.look-ct{padding:52px;display:flex;flex-direction:column;justify-content:center}
+.look-n{font-family:var(--dsp);font-size:3.8rem;color:rgba(196,163,90,.1);font-weight:600}
+.look-t{font-family:var(--dsp);font-size:1.5rem;color:var(--text);margin-top:6px;font-weight:500}
+.look-d{font-size:.82rem;color:var(--text-2);line-height:2;margin-top:16px;font-weight:300}
+.look-det{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.look-det span{font-size:.74rem;color:var(--text-3);display:flex;align-items:center;gap:9px;font-weight:400}
+.look-det span .ic{width:13px;height:13px;color:var(--gold)}
+/* INSTAGRAM */
+.insta{padding:90px 0}
+.insta-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:5px}
+.insta-i{position:relative;aspect-ratio:1;overflow:hidden;cursor:pointer}
+.insta-i img{width:100%;height:100%;transition:transform .6s var(--ease)}
+.insta-i:hover img{transform:scale(1.1)}
+.insta-i-ov{position:absolute;inset:0;background:rgba(107,29,42,.5);display:flex;align-items:center;justify-content:center;opacity:0;transition:all .5s var(--ease)}
+.insta-i:hover .insta-i-ov{opacity:1}
+.insta-i-ov .ic{color:var(--white);width:28px;height:28px}
+/* NEWSLETTER */
+.news{background:var(--maroon);padding:90px 0}
+.news-in{text-align:center;max-width:600px;margin:0 auto}
+.news h2{font-family:var(--dsp);font-size:2.2rem;color:var(--white);margin-bottom:12px;font-weight:500}
+.news p{color:rgba(255,255,255,.5);font-size:.86rem;margin-bottom:40px;font-weight:300}
+.news-form{display:flex;gap:0;border-radius:var(--r);overflow:hidden;max-width:480px;margin:0 auto}
+.news-form input{flex:1;padding:17px 24px;font-size:.84rem;background:rgba(255,255,255,.07);color:var(--white);border:1px solid rgba(255,255,255,.1);font-weight:300;transition:all .3s ease}
+.news-form input::placeholder{color:rgba(255,255,255,.25)}
+.news-form input:focus{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2)}
+.news-form button{padding:17px 32px;background:var(--gold);color:var(--white);font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;transition:all .3s ease;white-space:nowrap}
+.news-form button:hover{background:var(--gold-dark)}
+/* FOOTER */
+footer{background:var(--dark);color:rgba(255,255,255,.45);padding:90px 0 0}
+.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:64px}
+.ft-brand b{font-family:var(--dsp);color:var(--gold);font-size:1rem;letter-spacing:.3em;text-transform:uppercase;font-weight:500}
+.ft-brand small{display:block;color:rgba(255,255,255,.18);font-size:.42rem;letter-spacing:.5em;text-transform:uppercase;margin-top:4px}
+.ft-brand p{margin-top:18px;font-size:.82rem;line-height:2;color:rgba(255,255,255,.28);font-weight:300}
+.ft-col h4{font-size:.56rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:26px;font-family:var(--bd);font-weight:600}
+.ft-col a{display:block;font-size:.82rem;color:rgba(255,255,255,.32);padding:8px 0;transition:all .3s ease;font-weight:300;cursor:pointer}
+.ft-col a:hover{color:var(--gold);padding-left:5px}
+.ft-bot{margin-top:72px;padding:26px 0;border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;align-items:center;font-size:.72rem;color:rgba(255,255,255,.15);font-weight:300}
+.ft-soc{display:flex;gap:14px}
+.ft-soc a{width:42px;height:42px;border:1px solid rgba(255,255,255,.06);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all .3s ease;color:rgba(255,255,255,.25)}
+.ft-soc a .ic{width:16px;height:16px}
+.ft-soc a:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-3px)}
+/* WHATSAPP */
+.wa{position:fixed;bottom:32px;right:32px;z-index:9990;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.4);transition:all .5s var(--ease);animation:waP 2.5s infinite}
+.wa:hover{transform:scale(1.12);box-shadow:0 6px 36px rgba(37,211,102,.55)}
+.wa .ic{width:30px;height:30px;color:white}.wa .ic svg{fill:white;stroke:none}
+@keyframes waP{0%,100%{box-shadow:0 4px 24px rgba(37,211,102,.35)}50%{box-shadow:0 4px 40px rgba(37,211,102,.7)}}
+/* SEARCH */
+.srch{position:fixed;inset:0;background:rgba(13,13,13,.55);backdrop-filter:blur(20px);z-index:99999;display:none;align-items:flex-start;justify-content:center;padding-top:12vh}
+.srch.on{display:flex}
+.srch-m{background:var(--white);border-radius:20px;max-width:720px;width:calc(100% - 40px);animation:srIn .5s var(--expo);box-shadow:0 20px 60px rgba(0,0,0,.16);overflow:hidden}
+@keyframes srIn{from{opacity:0;transform:translateY(-50px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+.srch-top{padding:36px 40px 0;display:flex;align-items:center;justify-content:space-between}
+.srch-top h2{font-family:var(--dsp);font-size:1.35rem;font-weight:500}
+.srch-close{width:42px;height:42px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:all .3s ease;color:var(--text-3);background:var(--cream)}
+.srch-close:hover{background:var(--maroon);color:var(--white)}
+.srch-inp{position:relative;margin:28px 40px 0;border-radius:60px;overflow:hidden;border:2px solid var(--champagne);transition:all .3s ease;display:flex;align-items:center;background:var(--ivory);padding:0 8px}
+.srch-inp:focus-within{border-color:var(--gold);box-shadow:0 0 0 5px var(--gold-glow),0 4px 24px rgba(196,163,90,.1);background:var(--white)}
+.srch-inp-ic{width:50px;height:50px;display:flex;align-items:center;justify-content:center;color:var(--gold);flex-shrink:0}
+.srch-inp input{width:100%;padding:18px 14px 18px 4px;font-size:.95rem;background:transparent;color:var(--text);font-weight:400}
+.srch-inp input::placeholder{color:var(--text-3)}
+.srch-kbd{margin-right:16px;padding:5px 12px;border-radius:6px;background:var(--cream);font-size:.55rem;color:var(--text-3);white-space:nowrap;font-weight:500;border:1px solid rgba(0,0,0,.04)}
+.srch-tags{display:flex;flex-wrap:wrap;gap:8px;padding:20px 40px 0}
+.srch-tag{padding:8px 18px;border-radius:24px;background:var(--cream);font-size:.7rem;color:var(--text-2);cursor:pointer;transition:all .3s ease;font-weight:400;border:1px solid transparent}
+.srch-tag:hover{background:var(--gold);color:var(--white);border-color:var(--gold);transform:translateY(-2px)}
+.srch-res{padding:16px 40px 40px;max-height:400px;overflow-y:auto}
+.srch-ri{display:flex;align-items:center;gap:18px;padding:14px;border-bottom:1px solid rgba(0,0,0,.03);cursor:pointer;transition:all .3s ease;border-radius:12px;margin:0 -14px}
+.srch-ri:hover{background:var(--cream)}
+.srch-ri-img{width:58px;height:76px;border-radius:8px;overflow:hidden;flex-shrink:0}
+.srch-ri-img img{width:100%;height:100%}
+.srch-ri h4{font-family:var(--dsp);font-size:.95rem;font-weight:500}
+.srch-ri .meta{font-size:.7rem;color:var(--text-3);margin-top:2px;font-weight:300}
+.srch-ri .pri{font-size:.88rem;color:var(--maroon);font-weight:600;margin-top:4px}
+.srch-ri-arr{color:var(--text-3);margin-left:auto;transition:all .3s ease}
+.srch-ri:hover .srch-ri-arr{color:var(--maroon);transform:translateX(4px)}
+/* SHOP */
+.sh-hero{background:linear-gradient(135deg,var(--maroon-deep),var(--maroon));padding:72px 0;text-align:center;position:relative;overflow:hidden}
+.sh-hero h1{font-family:var(--dsp);font-size:2.8rem;color:var(--white);font-weight:500;position:relative}
+.sh-hero .bc{font-size:.7rem;color:rgba(255,255,255,.3);margin-top:14px;letter-spacing:.18em;font-weight:300;position:relative}
+.sh-hero .bc a{color:var(--gold);cursor:pointer}
+.sh-lay{display:grid;grid-template-columns:280px 1fr;gap:48px;padding:48px 0}
+.sh-side{position:sticky;top:100px;align-self:start}
+.fg{margin-bottom:36px}
+.fg h3{font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--text);margin-bottom:16px;font-weight:600;display:flex;align-items:center;gap:8px}
+.fg h3 .ic{color:var(--gold)}
+.fo{display:flex;align-items:center;gap:11px;padding:9px 0;cursor:pointer;font-size:.82rem;color:var(--text-2);transition:all .3s ease;font-weight:400}
+.fo:hover{color:var(--maroon)}
+.fcb{width:17px;height:17px;border:1.5px solid var(--text-3);border-radius:4px;display:flex;align-items:center;justify-content:center;transition:all .3s ease;flex-shrink:0}
+.fo.on .fcb{background:var(--maroon);border-color:var(--maroon)}
+.fo.on .fcb::after{content:'';width:5px;height:8px;border-right:1.5px solid white;border-bottom:1.5px solid white;transform:rotate(45deg);margin-top:-2px}
+.pri-rng{display:flex;gap:10px;align-items:center}
+.pri-inp{width:100%;padding:11px 15px;border:1px solid var(--champagne);border-radius:8px;font-size:.82rem;background:var(--white);font-weight:300;transition:all .3s ease}
+.pri-inp:focus{border-color:var(--gold);box-shadow:0 0 0 4px var(--gold-glow)}
+.sh-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid rgba(0,0,0,.04)}
+.sh-bar .rc{font-size:.82rem;color:var(--text-2);font-weight:300}
+.sh-sort{display:flex;align-items:center;gap:10px}
+.sh-sort label{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3);font-weight:500}
+.sh-sort select{padding:9px 16px;border:1px solid var(--champagne);border-radius:8px;font-size:.82rem;background:var(--white);color:var(--text);font-weight:400}
+.side-srch{position:relative;margin-bottom:28px}
+.side-srch input{width:100%;padding:13px 18px 13px 44px;border:1px solid var(--champagne);border-radius:10px;font-size:.82rem;background:var(--white);font-weight:300;transition:all .3s ease}
+.side-srch input:focus{border-color:var(--gold);box-shadow:0 0 0 4px var(--gold-glow)}
+.side-srch .ic{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--text-3)}
+/* PRODUCT DETAIL */
+.pd{padding:48px 0 100px}
+.pd-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.gal-main{aspect-ratio:3/4;border-radius:var(--r);overflow:hidden;cursor:zoom-in}
+.gal-main img{width:100%;height:100%;transition:transform .4s ease}
+.gal-main:hover img{transform:scale(1.04)}
+.gal-thumbs{display:flex;gap:10px;margin-top:14px}
+.gal-th{width:78px;height:100px;border-radius:var(--r);cursor:pointer;border:2px solid transparent;transition:all .3s ease;overflow:hidden}
+.gal-th.on{border-color:var(--maroon)}.gal-th img{width:100%;height:100%}
+.pd-info{padding-top:12px}
+.pd-bc{font-size:.7rem;color:var(--text-3);margin-bottom:20px;font-weight:300}
+.pd-bc a{color:var(--gold);cursor:pointer}
+.pd-title{font-family:var(--dsp);font-size:2.3rem;font-weight:500}
+.pd-price{font-size:1.6rem;color:var(--maroon);font-weight:600;margin-top:16px}
+.pd-rating{display:flex;align-items:center;gap:8px;margin-top:12px}
+.pd-rating .stars{color:var(--gold);display:flex;gap:2px}
+.pd-rating .stars .ic{width:15px;height:15px}.pd-rating .stars .ic svg{fill:var(--gold);stroke:var(--gold);stroke-width:1}
+.pd-rating span{font-size:.82rem;color:var(--text-3);font-weight:300}
+.pd-desc{color:var(--text-2);line-height:2;margin-top:24px;padding-bottom:24px;border-bottom:1px solid rgba(0,0,0,.04);font-weight:300;font-size:.9rem}
+.det-sec{margin-top:28px}
+.det-sec-t{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--text);margin-bottom:14px;font-weight:600}
+.sz-opts{display:flex;gap:8px;flex-wrap:wrap}
+.sz-btn{padding:11px 22px;border:1.5px solid var(--champagne);font-size:.78rem;border-radius:var(--r);transition:all .3s ease;cursor:pointer;font-weight:400}
+.sz-btn:hover{border-color:var(--maroon)}.sz-btn.on{background:var(--maroon);color:var(--white);border-color:var(--maroon)}
+.fab-tags{display:flex;gap:8px;flex-wrap:wrap}
+.fab-tag{padding:7px 16px;background:var(--cream);font-size:.74rem;border-radius:24px;color:var(--text-2);font-weight:400;display:flex;align-items:center;gap:6px}
+.cust-opts{display:flex;flex-direction:column;gap:11px}
+.cust-o{display:flex;align-items:center;gap:9px;font-size:.82rem;color:var(--text-2);font-weight:400;cursor:pointer}
+.cust-o input[type=checkbox]{accent-color:var(--maroon);width:17px;height:17px}
+.det-btns{display:flex;gap:12px;margin-top:34px}
+.qty{display:flex;align-items:center;border:1.5px solid var(--champagne);border-radius:var(--r)}
+.qty button{width:46px;height:52px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--text-2);transition:all .3s ease}
+.qty button:hover{color:var(--maroon);background:var(--cream)}
+.qty span{width:44px;text-align:center;font-size:.9rem;font-weight:500}
+.det-meta{margin-top:34px;padding-top:24px;border-top:1px solid rgba(0,0,0,.04);display:flex;flex-direction:column;gap:14px}
+.det-meta-i{font-size:.8rem;color:var(--text-3);display:flex;align-items:center;gap:11px;font-weight:400}
+.det-meta-i .ic{width:16px;height:16px;color:var(--gold)}
+.det-meta-i strong{color:var(--text-2);font-weight:500}
+/* ABOUT */
+.ab-hero{position:relative;height:55vh;min-height:400px;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.ab-hero img{position:absolute;inset:0;width:100%;height:100%}
+.ab-hero-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(74,14,26,.65),rgba(13,13,13,.55));z-index:1}
+.ab-hero-ct{position:relative;z-index:2}
+.ab-hero h1{font-family:var(--dsp);font-size:clamp(2.2rem,5vw,3.8rem);color:var(--white);font-weight:500}
+.ab-hero p{color:var(--gold);font-size:.62rem;letter-spacing:.55em;text-transform:uppercase;margin-top:18px;font-weight:400}
+.tl{max-width:720px;margin:0 auto;position:relative}
+.tl::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--gold);opacity:.15;transform:translateX(-50%)}
+.tl-i{position:relative;padding:36px 0;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.tl-i:nth-child(odd) .tl-ct{text-align:right}
+.tl-yr{font-family:var(--dsp);font-size:2.2rem;color:var(--gold);opacity:.3;font-weight:500}
+.tl-ct h3{font-family:var(--dsp);font-size:1.15rem;font-weight:500}
+.tl-ct p{font-size:.82rem;color:var(--text-2);margin-top:8px;line-height:1.8;font-weight:300}
+.tl-dot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:12px;height:12px;background:var(--gold);border-radius:50%;border:3px solid var(--ivory);z-index:1}
+.craft-g{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.craft-i{text-align:center;padding:48px 36px}
+.craft-ic{width:68px;height:68px;margin:0 auto 24px;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);transition:all .5s var(--ease)}
+.craft-i:hover .craft-ic{background:var(--gold);color:var(--white)}
+.craft-ic .ic{width:26px;height:26px}
+.craft-i h3{font-family:var(--dsp);font-size:1.2rem;margin-bottom:12px;font-weight:500}
+.craft-i p{font-size:.82rem;color:var(--text-2);line-height:1.9;font-weight:300}
+/* CONTACT */
+.ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.ct-form{background:var(--white);padding:52px;border-radius:var(--r);box-shadow:0 2px 16px rgba(0,0,0,.05)}
+.fg-l{margin-bottom:24px}
+.fg-l label{display:block;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2);margin-bottom:9px;font-weight:500}
+.fg-l input,.fg-l textarea,.fg-l select{width:100%;padding:15px 18px;border:1.5px solid var(--champagne);border-radius:8px;font-size:.86rem;background:var(--ivory);transition:all .3s ease;font-weight:400}
+.fg-l input:focus,.fg-l textarea:focus,.fg-l select:focus{border-color:var(--gold);background:var(--white);box-shadow:0 0 0 4px var(--gold-glow)}
+.fg-l textarea{min-height:130px;resize:vertical}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.ct-info{background:linear-gradient(145deg,var(--maroon),var(--maroon-deep));padding:52px;border-radius:var(--r);color:var(--white);display:flex;flex-direction:column;justify-content:center}
+.ct-info-i{margin-bottom:34px}
+.ct-info-i h4{font-size:.55rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:600;display:flex;align-items:center;gap:9px}
+.ct-info-i h4 .ic{width:14px;height:14px}
+.ct-info-i p{font-size:.86rem;line-height:1.85;color:rgba(255,255,255,.75);font-weight:300}
+.ct-info-i a{color:var(--gold-light);transition:all .3s ease}
+.ct-info-i a:hover{color:var(--white)}
+.map{width:100%;height:280px;border-radius:var(--r);margin-top:28px;overflow:hidden;border:0}
+.form-status{padding:16px 20px;border-radius:8px;margin-top:18px;font-size:.84rem;font-weight:500;display:none}
+.form-status.ok{display:block;background:rgba(45,143,94,.08);color:var(--ok);border:1px solid rgba(45,143,94,.2)}
+.form-status.err{display:block;background:rgba(192,57,43,.08);color:var(--err);border:1px solid rgba(192,57,43,.2)}
+/* CART */
+.cart-sec{min-height:70vh}
+.cart-g{display:grid;grid-template-columns:1fr 420px;gap:48px;align-items:start}
+.cart-items{display:flex;flex-direction:column;gap:18px}
+.ci{display:grid;grid-template-columns:110px 1fr auto;gap:24px;background:var(--white);padding:24px;border-radius:var(--r);box-shadow:0 2px 16px rgba(0,0,0,.05);align-items:center}
+.ci-img{width:110px;height:140px;border-radius:var(--r);overflow:hidden}
+.ci-img img{width:100%;height:100%}
+.ci h3{font-family:var(--dsp);font-size:1.05rem;font-weight:500}
+.ci .ci-m{font-size:.74rem;color:var(--text-3);margin-top:5px;font-weight:300}
+.ci .ci-p{font-size:1.05rem;color:var(--maroon);font-weight:600;margin-top:10px}
+.ci-acts{display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+.ci-rm{font-size:.65rem;color:var(--text-3);cursor:pointer;transition:all .3s ease;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;gap:5px;font-weight:400}
+.ci-rm:hover{color:var(--maroon)}
+.cart-sum{background:var(--white);padding:40px;border-radius:var(--r);box-shadow:0 2px 16px rgba(0,0,0,.05);position:sticky;top:100px}
+.cart-sum h3{font-family:var(--dsp);font-size:1.35rem;margin-bottom:24px;font-weight:500}
+.sum-r{display:flex;justify-content:space-between;padding:11px 0;font-size:.86rem;color:var(--text-2);font-weight:300}
+.sum-r.total{border-top:2px solid var(--maroon);margin-top:16px;padding-top:20px;font-size:1.15rem;color:var(--text);font-weight:600}
+.cart-empty{text-align:center;padding:100px 24px}
+.cart-empty h2{font-family:var(--dsp);font-size:1.9rem;font-weight:500;margin-top:22px}
+.cart-empty p{color:var(--text-2);margin-top:10px;font-weight:300}
+/* CHECKOUT */
+.co-grid{display:grid;grid-template-columns:1fr 460px;gap:48px;align-items:start}
+.co-sec{background:var(--white);padding:44px;border-radius:var(--r);box-shadow:0 2px 16px rgba(0,0,0,.05);margin-bottom:28px}
+.co-sec h3{font-family:var(--dsp);font-size:1.3rem;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid rgba(0,0,0,.04);font-weight:500;display:flex;align-items:center;gap:12px}
+.co-sec h3 .ic{width:22px;height:22px;color:var(--gold)}
+.pay-opts{display:flex;flex-direction:column;gap:12px}
+.pay-o{display:flex;align-items:center;gap:16px;padding:20px 22px;border:1.5px solid var(--champagne);border-radius:10px;cursor:pointer;transition:all .3s ease;font-weight:400}
+.pay-o:hover{border-color:var(--gold);background:var(--gold-glow)}
+.pay-o.sel{border-color:var(--maroon);background:rgba(107,29,42,.03)}
+.pay-o input[type=radio]{accent-color:var(--maroon);width:17px;height:17px;flex-shrink:0}
+.pay-o-ic{width:40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.5rem;font-weight:700;overflow:hidden;background:var(--cream)}
+.pay-o-ic img{width:100%;height:100%;object-fit:contain}
+.pay-o-info{flex:1}
+.pay-o-info b{font-weight:500;font-size:.88rem;display:block}
+.pay-o-info small{font-size:.7rem;color:var(--text-3);font-weight:300}
+.upi-apps{display:flex;gap:14px;margin-top:18px;padding:18px 0;flex-wrap:wrap}
+.upi-btn{display:flex;flex-direction:column;align-items:center;gap:8px;padding:16px 22px;border:1.5px solid var(--champagne);border-radius:12px;cursor:pointer;transition:all .3s ease;min-width:95px;background:var(--white)}
+.upi-btn:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 2px 16px rgba(0,0,0,.05)}
+.upi-btn.on{border-color:var(--maroon);background:rgba(107,29,42,.03)}
+.upi-btn img{width:36px;height:36px;border-radius:8px;object-fit:contain}
+.upi-btn span{font-size:.66rem;color:var(--text-2);font-weight:500}
+.upi-id{margin-top:18px;display:flex;gap:10px}
+.upi-id input{flex:1;padding:13px 18px;border:1.5px solid var(--champagne);border-radius:10px;font-size:.86rem;background:var(--ivory)}
+.upi-id input:focus{border-color:var(--gold);background:var(--white)}
+.upi-id button{padding:13px 22px;background:var(--maroon);color:var(--white);border-radius:10px;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;font-weight:500}
+.pay-secure{display:flex;align-items:center;gap:10px;margin-top:22px;padding:16px 20px;background:rgba(45,143,94,.05);border-radius:10px;font-size:.74rem;color:var(--ok);font-weight:500}
+.pay-secure .ic{width:16px;height:16px;flex-shrink:0}
+.co-sum-card{background:var(--white);padding:40px;border-radius:var(--r);box-shadow:0 2px 16px rgba(0,0,0,.05);position:sticky;top:100px}
+/* MODALS */
+.modal-ov{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:99999;display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(8px)}
+.modal-ov.on{display:flex}
+.modal{background:var(--white);border-radius:12px;max-width:940px;width:100%;max-height:90vh;overflow-y:auto;position:relative;animation:modUp .4s var(--ease);box-shadow:0 20px 60px rgba(0,0,0,.16)}
+@keyframes modUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+.mod-close{position:absolute;top:18px;right:18px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--text-2);z-index:2;background:var(--white);border-radius:50%;box-shadow:0 2px 16px rgba(0,0,0,.05);transition:all .3s ease}
+.mod-close:hover{background:var(--maroon);color:var(--white)}
+.mod-body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.mod-img{aspect-ratio:3/4;overflow:hidden}.mod-img img{width:100%;height:100%}
+.mod-info{padding:48px}
+/* QUIZ */
+.quiz-body{padding:60px 52px;text-align:center}
+.quiz-step{display:none}.quiz-step.on{display:block}
+.quiz-step h2{font-family:var(--dsp);font-size:1.8rem;margin-bottom:10px;font-weight:500}
+.quiz-step p{color:var(--text-2);margin-bottom:34px;font-weight:300}
+.quiz-opts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:520px;margin:0 auto}
+.quiz-opt{padding:28px;border:1.5px solid var(--champagne);border-radius:10px;cursor:pointer;transition:all .5s var(--ease);text-align:center}
+.quiz-opt:hover{border-color:var(--gold);background:var(--gold-glow)}
+.quiz-opt.sel{border-color:var(--maroon);background:rgba(107,29,42,.04)}
+.quiz-opt .opt-ic{margin-bottom:12px;color:var(--gold)}
+.quiz-opt .opt-ic .ic{width:32px;height:32px}
+.quiz-opt .opt-txt{font-size:.82rem;color:var(--text-2);font-weight:400}
+.quiz-prog{display:flex;gap:6px;justify-content:center;margin-top:40px}
+.quiz-prog-d{width:8px;height:8px;border-radius:50%;background:var(--champagne);transition:all .3s ease}
+.quiz-prog-d.on{background:var(--gold);width:32px;border-radius:4px}
+.quiz-prog-d.done{background:var(--maroon)}
+.quiz-res{text-align:center;padding:24px 0}
+.quiz-res h2{font-family:var(--dsp);font-size:1.9rem;color:var(--maroon);margin-bottom:14px;font-weight:500}
+.quiz-res p{color:var(--text-2);line-height:1.9;font-weight:300}
+.quiz-res-card{margin-top:32px;background:var(--cream);padding:40px;border-radius:10px;overflow:hidden}
+.quiz-res-card img{width:100%;height:220px;border-radius:8px;margin-bottom:20px}
+.quiz-res-card h3{font-family:var(--dsp);font-size:1.35rem;font-weight:500}
+/* ZOOM */
+.zoom{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:100001;display:none;align-items:center;justify-content:center;cursor:zoom-out}
+.zoom.on{display:flex}
+.zoom img{max-width:88%;max-height:88%;border-radius:6px}
+/* RECENTLY VIEWED */
+.rv{background:var(--cream);padding:72px 0}
+.rv-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.rv-card{background:var(--white);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:all .5s var(--ease)}
+.rv-card:hover{transform:translateY(-5px);box-shadow:0 2px 16px rgba(0,0,0,.05)}
+.rv-card-img{aspect-ratio:3/4;overflow:hidden}.rv-card-img img{width:100%;height:100%}
+.rv-card-info{padding:16px}
+.rv-card-info h4{font-size:.82rem;font-family:var(--dsp);font-weight:500}
+.rv-card-info p{font-size:.8rem;color:var(--maroon);margin-top:5px;font-weight:600}
+/* REVEAL */
+.rv-anim{opacity:0;transform:translateY(40px);transition:opacity .9s ease,transform .9s var(--ease)}
+.rv-anim.shown{opacity:1;transform:translateY(0)}
+.rv-d1{transition-delay:.1s}.rv-d2{transition-delay:.2s}.rv-d3{transition-delay:.3s}.rv-d4{transition-delay:.4s}
+/* TOAST */
+.toast-c{position:fixed;top:96px;right:22px;z-index:99998;display:flex;flex-direction:column;gap:10px}
+.toast{background:var(--dark);color:var(--white);padding:16px 26px;border-radius:10px;font-size:.82rem;display:flex;align-items:center;gap:12px;animation:tIn .4s ease;box-shadow:0 20px 60px rgba(0,0,0,.16);max-width:380px;font-weight:400}
+.toast .ic{width:18px;height:18px;flex-shrink:0}
+.toast.t-ok .ic{color:#4ade80}.toast.t-info .ic{color:var(--gold)}.toast.t-err .ic{color:#f87171}
+.toast.t-out{animation:tOut .3s ease forwards}
+@keyframes tIn{from{opacity:0;transform:translateX(50px)}to{opacity:1;transform:translateX(0)}}
+@keyframes tOut{to{opacity:0;transform:translateX(50px)}}
+.page{display:none}.page.on{display:block;animation:pgIn .6s ease}
+@keyframes pgIn{from{opacity:0}to{opacity:1}}
+/* BACK TOP */
+.btt{position:fixed;bottom:104px;right:32px;z-index:9989;width:46px;height:46px;background:var(--maroon);color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 40px rgba(0,0,0,.1);opacity:0;visibility:hidden;transform:translateY(12px);transition:all .5s var(--ease)}
+.btt.vis{opacity:1;visibility:visible;transform:translateY(0)}
+.btt:hover{background:var(--maroon-deep);transform:translateY(-4px)}
+/* LOADING SPINNER */
+.btn-loading{pointer-events:none;opacity:.7}
+.btn-loading::after{content:'';width:16px;height:16px;border:2px solid transparent;border-top:2px solid currentColor;border-radius:50%;animation:spin .6s linear infinite;margin-left:8px}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* RESPONSIVE */
+@media(max-width:1200px){
+.p-grid{grid-template-columns:repeat(3,1fr)}
+.ft-grid{grid-template-columns:1fr 1fr}
+.col-grid{grid-template-columns:repeat(2,1fr)}
+.trust-row{gap:32px}
+}
+@media(max-width:1024px){
+.sh-lay{grid-template-columns:1fr}
+.sh-side{display:none}
+.story-grid{grid-template-columns:1fr;gap:48px}.story-img{height:460px}
+.pd-grid{grid-template-columns:1fr}
+.cart-g{grid-template-columns:1fr}.co-grid{grid-template-columns:1fr}
+.ct-grid{grid-template-columns:1fr}
+.looks-grid{grid-template-columns:1fr}.look{grid-template-columns:1fr}
+.look:nth-child(even){direction:ltr}
+.craft-g{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+.con{padding:0 22px}.nav-c{padding:0 22px}
+.nav-links{display:none}.ham{display:flex}
+.hero{min-height:560px}
+.sec{padding:80px 0}
+.p-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+.col-grid{grid-template-columns:1fr}.col-card{height:420px}
+.insta-grid{grid-template-columns:repeat(3,1fr)}
+.ft-grid{grid-template-columns:1fr;gap:32px}
+.ft-bot{flex-direction:column;gap:18px;text-align:center}
+.news-form{flex-direction:column}
+.mod-body{grid-template-columns:1fr}.mod-img{aspect-ratio:16/9}
+.rv-grid{grid-template-columns:repeat(3,1fr)}
+.ci{grid-template-columns:80px 1fr;gap:14px}
+.ci-acts{grid-column:span 2;flex-direction:row;justify-content:space-between;width:100%}
+.quiz-opts{grid-template-columns:1fr}
+.tl{padding:0 20px}.tl::before{left:20px}
+.tl-i{grid-template-columns:1fr;padding-left:50px}.tl-dot{left:20px}
+.fg-row{grid-template-columns:1fr}
+.srch-m{margin:20px;border-radius:14px}
+.srch-top{padding:28px 28px 0}.srch-inp{margin:22px 28px 0}
+.srch-tags{padding:18px 28px 0}.srch-res{padding:12px 28px 28px}
+.upi-apps{justify-content:center}
+.trust-row{gap:22px;flex-direction:column;align-items:center}
+.vid{height:42vh}
+.hero-title{font-size:clamp(1.8rem,7vw,3rem)}
+}
+@media(max-width:480px){
+.p-grid{grid-template-columns:1fr 1fr;gap:8px}
+.p-info{padding:14px}.p-name{font-size:.88rem}.p-price{font-size:.9rem}
+.rv-grid{grid-template-columns:repeat(2,1fr)}
+.hero-btns{flex-direction:column;align-items:center}
+.story-stats{grid-template-columns:1fr;gap:18px}
+.upi-btn{min-width:80px;padding:12px 16px}
+}
+
+﻿/* TOP SCROLL PROGRESS BAR */
+.scroll-bar{position:fixed;top:0;left:0;height:3.5px;background:linear-gradient(90deg,var(--maroon),var(--gold),var(--gold-light));z-index:100005;width:0%;box-shadow:0 0 12px var(--gold);transition:width .1s linear}
+
+/* LUXURY CUSTOM CURSOR */
+.cursor-dot{position:fixed;width:8px;height:8px;background:var(--gold);border-radius:50%;pointer-events:none;z-index:100010;transform:translate(-50%,-50%);transition:transform .12s ease-out,opacity .3s ease;box-shadow:0 0 10px var(--gold)}
+.cursor-ring{position:fixed;width:36px;height:36px;border:1.5px solid var(--gold);border-radius:50%;pointer-events:none;z-index:100009;transform:translate(-50%,-50%);transition:width .25s var(--expo),height .25s var(--expo),border-color .25s ease,background .25s ease;will-change:left,top}
+.cursor-ring.active{width:56px;height:56px;background:var(--gold-glow);border-color:var(--gold-light);box-shadow:0 0 20px var(--gold-glow)}
+@media(hover:none),(pointer:coarse){.cursor-dot,.cursor-ring{display:none!important}}
+
+/* ENHANCED BUTTON SHIMMER & HOVER */
+.btn{position:relative;overflow:hidden}
+.btn::before{content:'';position:absolute;top:0;left:-130%;width:80%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent);transform:skewX(-22deg);transition:left .75s var(--expo)}
+.btn:hover::before{left:140%}
+.btn-p:hover{box-shadow:0 12px 35px rgba(107,29,42,.45);transform:translateY(-4px)}
+.btn-g:hover{box-shadow:0 12px 35px rgba(196,163,90,.45);transform:translateY(-4px)}
+.btn-o:hover{box-shadow:0 8px 25px rgba(196,163,90,.3);transform:translateY(-3px)}
+
+/* 3D TILT CARDS & SPECULAR SHINE */
+.p-card{transform-style:preserve-3d;will-change:transform;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.p-card:hover{transform:translateY(-10px) rotateX(2deg);box-shadow:0 22px 50px rgba(0,0,0,.15),0 0 25px var(--gold-glow)}
+.col-card{transform-style:preserve-3d;will-change:transform;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.col-card:hover{transform:translateY(-8px) scale(1.01);box-shadow:0 24px 60px rgba(0,0,0,.3),0 0 30px var(--gold-glow)}
+
+/* HERO TITLES & AMBIENT AURA */
+.hero-title em{text-shadow:0 0 35px rgba(196,163,90,.5)}
+.h-dot{transition:all .5s var(--expo)}
+.h-dot.on{box-shadow:0 0 14px var(--gold)}
+
+/* SOUND TOGGLE BUTTON IN NAV */
+.snd-btn{position:relative;width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:all .3s ease;color:var(--text)}
+.snd-btn:hover{background:var(--gold-glow);color:var(--maroon);transform:scale(1.08)}
+.snd-btn.muted svg{opacity:.4}
+
+/* CRAFTSMANSHIP ATELIER SECTION */
+.atelier{background:linear-gradient(180deg,var(--ivory),var(--cream))}
+.atelier-tabs{display:flex;justify-content:center;gap:12px;margin-bottom:48px;flex-wrap:wrap}
+.at-tab{padding:14px 28px;border-radius:30px;background:var(--white);border:1.5px solid var(--champagne);color:var(--text-2);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;cursor:pointer;transition:all .4s var(--ease)}
+.at-tab:hover{border-color:var(--gold);color:var(--maroon);transform:translateY(-2px)}
+.at-tab.on{background:var(--maroon);color:var(--white);border-color:var(--maroon);box-shadow:0 6px 20px rgba(107,29,42,.3)}
+.at-content{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;background:var(--white);border-radius:var(--r);padding:48px;box-shadow:0 10px 40px rgba(0,0,0,.06)}
+.at-img-box{position:relative;height:420px;border-radius:var(--r);overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.1)}
+.at-img-box img{width:100%;height:100%;transition:transform .8s var(--ease)}
+.at-img-box:hover img{transform:scale(1.08)}
+.at-badge{position:absolute;top:20px;left:20px;background:var(--maroon);color:var(--white);padding:7px 18px;border-radius:20px;font-size:.55rem;letter-spacing:.25em;text-transform:uppercase;font-weight:600}
+.at-desc h3{font-family:var(--dsp);font-size:2rem;color:var(--maroon);margin-bottom:16px}
+.at-desc p{font-size:.9rem;color:var(--text-2);line-height:2.1;margin-bottom:24px;font-weight:300}
+.at-features{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px}
+.at-feat{display:flex;align-items:center;gap:10px;font-size:.8rem;color:var(--text);font-weight:500}
+.at-feat .ic{color:var(--gold)}
+
+/* FREE SHIPPING PROGRESS METER */
+.ship-meter{background:var(--cream);border-radius:10px;padding:18px;margin-bottom:20px;border:1px solid rgba(196,163,90,.2)}
+.ship-meter-txt{font-size:.78rem;color:var(--text);font-weight:500;display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.ship-meter-txt .ic{color:var(--gold)}
+.ship-track{height:8px;background:rgba(0,0,0,.08);border-radius:4px;overflow:hidden;position:relative}
+.ship-bar{height:100%;background:linear-gradient(90deg,var(--maroon),var(--gold));border-radius:4px;transition:width .8s var(--expo)}
+
+/* PROMO CODE VOUCHER */
+.promo-box{display:flex;gap:10px;margin-top:16px;margin-bottom:16px}
+.promo-inp{flex:1;padding:12px 16px;border:1.5px solid var(--champagne);border-radius:8px;font-size:.82rem;background:var(--ivory);text-transform:uppercase;letter-spacing:.15em;font-weight:600}
+.promo-inp:focus{border-color:var(--gold);background:var(--white)}
+.promo-btn{padding:12px 22px;background:var(--maroon);color:var(--white);border-radius:8px;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;transition:all .3s ease}
+.promo-btn:hover{background:var(--maroon-deep)}
+
+/* SIZE GUIDE MODAL */
+.sz-table{width:100%;border-collapse:collapse;margin-top:16px;font-size:.82rem}
+.sz-table th{background:var(--cream);color:var(--maroon);padding:12px;text-align:left;font-weight:600;letter-spacing:.05em}
+.sz-table td{padding:12px;border-bottom:1px solid rgba(0,0,0,.06);color:var(--text-2)}
+.sz-table tr:hover td{background:var(--ivory)}
+.sz-unit-toggle{display:flex;gap:8px;justify-content:center;margin-bottom:18px}
+.sz-unit-btn{padding:6px 18px;border-radius:20px;border:1px solid var(--gold);font-size:.7rem;font-weight:500;cursor:pointer;transition:all .3s ease}
+.sz-unit-btn.on{background:var(--gold);color:var(--white)}
+
+/* WHATSAPP VIP CONCIERGE PULSE */
+.wa-wrapper{position:fixed;bottom:32px;right:32px;z-index:9990;display:flex;align-items:center}
+.wa-tooltip{position:absolute;right:75px;background:var(--dark);color:var(--white);padding:8px 16px;border-radius:20px;font-size:.72rem;letter-spacing:.05em;white-space:nowrap;opacity:0;pointer-events:none;transform:translateX(10px);transition:all .3s ease;box-shadow:0 6px 20px rgba(0,0,0,.2);border:1px solid rgba(196,163,90,.3)}
+.wa-wrapper:hover .wa-tooltip{opacity:1;transform:translateX(0)}
+.wa-ripple{position:absolute;inset:-10px;border-radius:50%;border:2px solid #25D366;animation:waRipple 2s ease-out infinite;pointer-events:none}
+@keyframes waRipple{0%{transform:scale(.9);opacity:1}100%{transform:scale(1.6);opacity:0}}
+
+/* BACK TO TOP WITH CIRCULAR PROGRESS RING */
+.btt{position:fixed;bottom:104px;right:32px;z-index:9989;width:50px;height:50px;background:var(--maroon);color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(107,29,42,.35);opacity:0;visibility:hidden;transform:translateY(15px);transition:all .4s var(--ease)}
+.btt.vis{opacity:1;visibility:visible;transform:translateY(0)}
+.btt:hover{background:var(--maroon-deep);transform:translateY(-4px);box-shadow:0 12px 35px rgba(107,29,42,.5)}
+.btt-svg{position:absolute;inset:0;width:50px;height:50px;transform:rotate(-90deg)}
+.btt-svg circle{fill:none;stroke-width:2.5}
+.btt-bg{stroke:rgba(255,255,255,.15)}
+.btt-prog{stroke:var(--gold);stroke-dasharray:150;stroke-dashoffset:150;transition:stroke-dashoffset .1s linear}
+
+@media(max-width:768px){
+  .at-content{grid-template-columns:1fr;padding:28px}
+  .at-img-box{height:280px}
+  .wa-tooltip{display:none}
+}
+
+</style>
+</head>
+<body>
+<div class="scroll-bar" id="scrollBar"></div>
+<div class="cursor-dot" id="cDot"></div>
+<div class="cursor-ring" id="cRing"></div>
+<canvas id="confettiCanvas" style="position:fixed;inset:0;pointer-events:none;z-index:100003"></canvas>
+
+<div class="loader" id="loader">
+<h1>Lagnadeep</h1>
+<small>Studio &middot; Since 1982</small>
+<div class="loader-bar"><span></span></div>
+</div>
+<div class="ann"><span>Complimentary Worldwide Shipping on Orders Above &#8377;50,000 &middot; Book Your Bridal Appointment Today</span></div>
+<nav id="navbar">
+<div class="nav-c">
+<a class="brand" onclick="go('home')"><b>Lagnadeep</b><small>Studio &middot; Est. 1982</small></a>
+<div class="nav-links">
+<a class="nav-a" onclick="go('home')">Home</a>
+<div style="position:relative">
+<a class="nav-a has-dd" onclick="go('shop')">Shop <span class="dd-arr"></span></a>
+<div class="mega"><div class="mega-in">
+<div class="mega-col"><h4>Bridal Wear</h4><a onclick="go('shop','bridal')">Bridal Lehengas</a><a onclick="go('shop','bridal')">Reception Gowns</a><a onclick="go('shop','bridal')">Haldi Outfits</a><a onclick="go('shop','bridal')">Sangeet Dresses</a></div>
+<div class="mega-col"><h4>Sarees</h4><a onclick="go('shop','sarees')">Bandhani</a><a onclick="go('shop','sarees')">Banarasi Silk</a><a onclick="go('shop','sarees')">Kanjivaram</a><a onclick="go('shop','sarees')">Modern Drapes</a></div>
+<div class="mega-col"><h4>Contemporary</h4><a onclick="go('shop','contemporary')">Indo-Western</a><a onclick="go('shop','contemporary')">Cocktail Dresses</a><a onclick="go('shop','contemporary')">Evening Gowns</a></div>
+<div class="mega-col"><div class="mega-img"><img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&h=450&fit=crop&q=85" alt="New Collection"><div class="mega-img-ov"></div><div class="mega-img-ct"><small>New Arrival</small><h3>Spring Bridal '25</h3></div></div></div>
+</div></div>
+</div>
+<a class="nav-a" onclick="go('bridal')">Bridal</a>
+<a class="nav-a" onclick="go('sarees')">Sarees</a>
+<a class="nav-a" onclick="go('about')">About</a>
+<a class="nav-a" onclick="go('contact')">Visit Store</a>
+</div>
+<div class="nav-acts"><button class="nav-btn snd-btn" id="sndBtn" onclick="AudioSys.toggle()" title="Sound Ambience"><span class="ic"><svg viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg></span></button>
+<button class="nav-btn" onclick="openSearch()" title="Search"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span></button>
+<button class="nav-btn" onclick="go('wishlist')" title="Wishlist"><span class="ic"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span><span class="badge badge-g" id="wlC" style="display:none">0</span></button>
+<button class="nav-btn" onclick="go('cart')" title="Bag"><span class="ic"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span><span class="badge badge-m" id="ctC" style="display:none">0</span></button>
+<button class="ham" id="ham" onclick="togMob()"><span></span><span></span><span></span></button>
+</div>
+</div>
+</nav>
+<div class="mob-nav" id="mobNav">
+<button class="mob-close" onclick="togMob()"><span class="ic"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></button>
+<a class="mob-a" onclick="go('home');togMob()">Home</a>
+<a class="mob-a" onclick="go('shop');togMob()">Shop All</a>
+<div class="mob-sub"><a onclick="go('shop','bridal');togMob()">Bridal Wear</a><a onclick="go('shop','sarees');togMob()">Sarees</a><a onclick="go('shop','contemporary');togMob()">Contemporary</a></div>
+<a class="mob-a" onclick="go('bridal');togMob()">Bridal Collection</a>
+<a class="mob-a" onclick="go('sarees');togMob()">Saree Collection</a>
+<a class="mob-a" onclick="go('about');togMob()">Our Story</a>
+<a class="mob-a" onclick="go('contact');togMob()">Visit Store</a>
+<a class="mob-a" onclick="go('cart');togMob()">Shopping Bag</a>
+<a class="mob-a" onclick="go('wishlist');togMob()">Wishlist</a>
+</div>
+<div class="srch" id="srchOv" onclick="if(event.target===this)this.classList.remove('on')">
+<div class="srch-m" onclick="event.stopPropagation()">
+<div class="srch-top"><h2>Search Collection</h2><button class="srch-close" onclick="document.getElementById('srchOv').classList.remove('on')"><span class="ic"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></button></div>
+<div class="srch-inp"><span class="srch-inp-ic"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span></span><input type="text" id="srchInp" placeholder="Search lehengas, sarees, gowns..." oninput="doSearch(this.value)" autocomplete="off"><span class="srch-kbd">ESC</span></div>
+<div class="srch-tags"><span class="srch-tag" onclick="document.getElementById('srchInp').value='bridal';doSearch('bridal')">Bridal</span><span class="srch-tag" onclick="document.getElementById('srchInp').value='saree';doSearch('saree')">Sarees</span><span class="srch-tag" onclick="document.getElementById('srchInp').value='bandhani';doSearch('bandhani')">Bandhani</span><span class="srch-tag" onclick="document.getElementById('srchInp').value='silk';doSearch('silk')">Silk</span><span class="srch-tag" onclick="document.getElementById('srchInp').value='gown';doSearch('gown')">Gowns</span><span class="srch-tag" onclick="document.getElementById('srchInp').value='velvet';doSearch('velvet')">Velvet</span></div>
+<div class="srch-res" id="srchRes"></div>
+</div>
+</div>
+<div class="toast-c" id="toastC"></div>
+<div class="zoom" id="zoomOv" onclick="this.classList.remove('on')"><img id="zoomImg" src="" alt="Zoom"></div>
+<div class="modal-ov" id="quizMod" onclick="if(event.target===this)this.classList.remove('on')">
+<div class="modal" style="max-width:700px" onclick="event.stopPropagation()">
+<button class="mod-close" onclick="document.getElementById('quizMod').classList.remove('on')"><span class="ic"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></button>
+<div class="quiz-body" id="quizBody"></div>
+</div>
+</div>
+<div class="modal-ov" id="qvMod" onclick="if(event.target===this)this.classList.remove('on')">
+<div class="modal" onclick="event.stopPropagation()">
+<button class="mod-close" onclick="document.getElementById('qvMod').classList.remove('on')"><span class="ic"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></button>
+<div class="mod-body" id="qvBody"></div>
+</div>
+</div>
+
+<div class="modal-ov" id="sizeGuideMod" onclick="if(event.target===this)this.classList.remove('on')">
+<div class="modal" style="max-width:680px;padding:38px" onclick="event.stopPropagation()">
+<button class="mod-close" onclick="document.getElementById('sizeGuideMod').classList.remove('on')"><span class="ic"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span></button>
+<span class="sec-ey">Fit & Tailoring</span>
+<h2 style="font-family:var(--dsp);font-size:1.8rem;margin-top:6px">Bridal Sizing Guide</h2>
+<p style="color:var(--text-2);font-size:.84rem;margin-top:6px;font-weight:300">All Lagnadeep couture garments include custom bespoke tailoring for a flawless bridal silhouette.</p>
+<div class="sz-unit-toggle" style="margin-top:20px">
+  <button class="sz-unit-btn on" onclick="selSzTab('in')">Inches (in)</button>
+  <button class="sz-unit-btn" onclick="selSzTab('cm')">Centimeters (cm)</button>
+</div>
+<table class="sz-table">
+  <thead>
+    <tr><th>Size</th><th>Waist</th><th>Hips</th><th>Skirt Length</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><b>XS</b></td><td>24-26"</td><td>34-36"</td><td>42"</td></tr>
+    <tr><td><b>S</b></td><td>26-28"</td><td>36-38"</td><td>42"</td></tr>
+    <tr><td><b>M</b></td><td>28-30"</td><td>38-40"</td><td>43"</td></tr>
+    <tr><td><b>L</b></td><td>30-32"</td><td>40-42"</td><td>43"</td></tr>
+    <tr><td><b>XL</b></td><td>32-35"</td><td>42-45"</td><td>44"</td></tr>
+  </tbody>
+</table>
+<div style="margin-top:24px;padding:16px;background:var(--cream);border-radius:var(--r);font-size:.78rem;color:var(--text-2);display:flex;align-items:center;gap:12px">
+  <span class="ic" style="color:var(--gold)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>
+  <span>Need custom measurements? Our senior master-tailor provides bespoke virtual fittings via video call.</span>
+</div>
+</div>
+</div>
+
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+<svg class="btt-svg" viewBox="0 0 50 50">
+<circle class="btt-bg" cx="25" cy="25" r="23"></circle>
+<circle class="btt-prog" id="bttCircle" cx="25" cy="25" r="23"></circle>
+</svg>
+<span class="ic"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></span>
+</button>
+<div class="wa-wrapper">
+<div class="wa-tooltip">Chat with Senior Stylist</div>
+<a href="https://wa.me/917977245856" target="_blank" class="wa" title="Chat on WhatsApp">
+<span class="wa-ripple"></span>
+<span class="ic"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></span>
+</a>
+</div>
+<!-- ========== PAGES ========== -->
+<!-- HOME -->
+<div class="page on" id="pg-home">
+<section class="hero">
+<div class="hero-slides" id="heroSlides">
+<div class="h-slide on"><div class="h-slide-bg" style="background-image:url('https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=1920&h=1080&fit=crop&q=85')"></div><div class="h-ov"></div><div class="h-vig"></div></div>
+<div class="h-slide"><div class="h-slide-bg" style="background-image:url('https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=1920&h=1080&fit=crop&q=85')"></div><div class="h-ov"></div><div class="h-vig"></div></div>
+<div class="h-slide"><div class="h-slide-bg" style="background-image:url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1920&h=1080&fit=crop&q=85')"></div><div class="h-ov"></div><div class="h-vig"></div></div>
+</div>
+<div class="hero-pts" id="heroPts"></div>
+<div class="hero-ct">
+<span class="h-ey"><span class="ln"></span>Fourth Generation &middot; Since 1982<span class="ln"></span></span>
+<h1 class="hero-title">Where Heritage Meets<br>the <em>Modern Bride</em></h1>
+<p class="hero-sub">Handcrafted Bandhani textiles & bridal couture, woven with four decades of artistry from the heart of Mumbai</p>
+<div class="hero-btns">
+<a class="btn btn-p" onclick="go('shop')"><span class="ic ic-sm"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>Explore Collection</a>
+<a class="btn btn-o" onclick="openQuiz()"><span class="ic ic-sm"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>Find Your Style</a>
+</div>
+</div>
+<div class="h-dots" id="hDots"><span class="h-dot on" onclick="slide(0)"></span><span class="h-dot" onclick="slide(1)"></span><span class="h-dot" onclick="slide(2)"></span></div>
+<div class="scroll-ind"><div class="scroll-ln"></div><span>Scroll</span></div>
+</section>
+<div class="trust"><div class="con"><div class="trust-row">
+<div class="trust-i"><span class="ic"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>Free Shipping Above &#8377;50,000</div>
+<div class="trust-i"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>100% Handcrafted Guarantee</div>
+<div class="trust-i"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>6-7 Weeks Custom Production</div>
+<div class="trust-i"><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>4.8 Rating &middot; 1400+ Reviews</div>
+</div></div></div>
+<section class="sec"><div class="con"><div class="story-grid">
+<div class="story-img rv-anim"><img src="https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?w=700&h=900&fit=crop&q=85" alt="Artisan at work" loading="lazy"></div>
+<div class="story-ct rv-anim rv-d2">
+<span class="sec-ey">Our Heritage</span>
+<h2 class="sec-t">A Legacy Woven in Gold & Tradition</h2>
+<p class="story-text">Founded in 1982, Lagnadeep Studio began as a small textile atelier in Mumbai's Mulund West. Now in its fourth generation, we continue the timeless art of Bandhani &#8212; each knot tied by hand, each thread carrying stories of heritage and devotion.<br><br>Every piece that leaves our studio is a testament to the delicate balance between honouring centuries-old craftsmanship and embracing the modern bride's vision.</p>
+<a class="btn btn-od" onclick="go('about')">Read Our Story</a>
+<div class="story-stats">
+<div class="stat"><h3>42+</h3><p>Years</p></div>
+<div class="stat"><h3>4.8</h3><p>Rating</p></div>
+<div class="stat"><h3>1400+</h3><p>Reviews</p></div>
+</div>
+</div>
+</div></div></section>
+<div class="marq"><div class="marq-track"><span class="marq-i"><span class="dot"></span>Bandhani</span><span class="marq-i"><span class="dot"></span>Banarasi Silk</span><span class="marq-i"><span class="dot"></span>Kanjivaram</span><span class="marq-i"><span class="dot"></span>Bridal Couture</span><span class="marq-i"><span class="dot"></span>Handwoven</span><span class="marq-i"><span class="dot"></span>Heritage</span><span class="marq-i"><span class="dot"></span>Custom Design</span><span class="marq-i"><span class="dot"></span>Since 1982</span><span class="marq-i"><span class="dot"></span>Bandhani</span><span class="marq-i"><span class="dot"></span>Banarasi Silk</span><span class="marq-i"><span class="dot"></span>Kanjivaram</span><span class="marq-i"><span class="dot"></span>Bridal Couture</span><span class="marq-i"><span class="dot"></span>Handwoven</span><span class="marq-i"><span class="dot"></span>Heritage</span><span class="marq-i"><span class="dot"></span>Custom Design</span><span class="marq-i"><span class="dot"></span>Since 1982</span></div></div>
+
+<section class="sec atelier">
+<div class="con">
+<div class="sec-h rv-anim">
+<span class="sec-ey">Timeless Artistry</span>
+<h2 class="sec-t">The Craftsmanship Atelier</h2>
+<p class="sec-d">Four decades of uncompromising mastery in India's most celebrated heritage textile techniques</p>
+</div>
+<div class="atelier-tabs rv-anim">
+<button class="at-tab on" onclick="switchAtelier(0)">Bandhani Knotting</button>
+<button class="at-tab" onclick="switchAtelier(1)">Banarasi Zari</button>
+<button class="at-tab" onclick="switchAtelier(2)">Kanjivaram Silk</button>
+<button class="at-tab" onclick="switchAtelier(3)">Royal Velvet & Zardozi</button>
+</div>
+<div class="at-content rv-anim" id="atContentBox">
+<div class="at-img-box">
+<span class="at-badge">10,000+ Hand-Tied Knots</span>
+<img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=700&h=900&fit=crop&q=85" alt="Bandhani" loading="lazy">
+</div>
+<div class="at-desc">
+<span class="sec-ey">Master Craft</span>
+<h3>The Art of Bandhani Tie-Dye</h3>
+<p>Every Lagnadeep Bandhani piece begins with our master artisans in Gujarat tying thousands of minuscule thread knots by hand onto pure silk. Draped in authentic natural vegetable and heritage mineral dyes, the fabric undergoes multiple immersions to create intricate, spellbinding constellations.</p>
+<div class="at-features">
+<div class="at-feat"><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></span>100% Hand-tied Motifs</div>
+<div class="at-feat"><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></span>Pure Mulberry Silk Base</div>
+<div class="at-feat"><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></span>Natural Heritage Dyeing</div>
+<div class="at-feat"><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></span>70+ Days Crafting Time</div>
+</div>
+<a class="btn btn-p" onclick="go('shop','bridal')">Explore Artistry</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec" style="background:var(--cream)"><div class="con">
+<div class="sec-h rv-anim"><span class="sec-ey">Curated For You</span><h2 class="sec-t">Our Collections</h2><p class="sec-d">Discover handcrafted ensembles for every chapter of your celebration</p></div>
+<div class="col-grid">
+<div class="col-card rv-anim rv-d1" onclick="go('shop','bridal')"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&h=800&fit=crop&q=85" alt="Bridal Collection" loading="lazy"><div class="col-card-ov"></div><div class="col-card-ct"><span class="col-card-cat">Bridal Couture</span><h3 class="col-card-t">Bridal Wear</h3><span class="col-card-n">24 Pieces</span><span class="col-card-lnk">Explore <span class="ic"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></span></div></div>
+<div class="col-card rv-anim rv-d2" onclick="go('shop','sarees')"><img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=700&h=900&fit=crop&q=85" alt="Saree Collection" loading="lazy"><div class="col-card-ov"></div><div class="col-card-ct"><span class="col-card-cat">Handwoven Heritage</span><h3 class="col-card-t">Saree Collection</h3><span class="col-card-n">36 Pieces</span><span class="col-card-lnk">Explore <span class="ic"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></span></div></div>
+<div class="col-card rv-anim rv-d3" onclick="go('shop','contemporary')"><img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=700&h=900&fit=crop&q=85" alt="Contemporary" loading="lazy"><div class="col-card-ov"></div><div class="col-card-ct"><span class="col-card-cat">Modern Elegance</span><h3 class="col-card-t">Contemporary</h3><span class="col-card-n">18 Pieces</span><span class="col-card-lnk">Explore <span class="ic"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></span></div></div>
+</div>
+</div></section>
+<section class="sec"><div class="con">
+<div class="sec-h rv-anim"><span class="sec-ey">Handpicked</span><h2 class="sec-t">Featured Pieces</h2><p class="sec-d">Our most coveted creations, chosen for the discerning bride</p></div>
+<div class="p-grid" id="featProd"></div>
+<div style="text-align:center;margin-top:52px" class="rv-anim"><a class="btn btn-od" onclick="go('shop')">View All Collection</a></div>
+</div></section>
+<div class="vid rv-anim">
+<img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=1920&h=800&fit=crop&q=85" alt="Craftsmanship" loading="lazy">
+<div class="vid-ov"></div>
+<div class="vid-ct">
+<div class="play" onclick="toast('Video coming soon!','info')"><span class="ic" style="width:30px;height:30px"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" fill="currentColor" stroke="none"/></svg></span></div>
+<h2 style="font-family:var(--dsp);font-size:clamp(1.6rem,3.5vw,2.6rem);color:var(--white);font-weight:500">The Art of Bandhani</h2>
+<p style="color:rgba(255,255,255,.45);font-size:.84rem;margin-top:10px;font-weight:300">Watch our artisans bring heritage to life</p>
+</div>
+</div>
+<section class="sec test"><div class="con">
+<div class="sec-h rv-anim"><span class="sec-ey" style="color:var(--gold)">Love Letters</span><h2 class="sec-t">What Our Brides Say</h2><p class="sec-d">Stories from the brides who trusted us with their most precious day</p></div>
+<div class="test-slider rv-anim"><div class="test-track" id="testTrack">
+<div class="test-slide"><div class="test-qi"><span class="ic ic-xl" style="margin:0 auto;display:flex"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></span></div><div class="test-strs"><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span></div><p class="test-txt">"Lagnadeep Studio made my bridal dreams come alive. The intricate Bandhani work on my lehenga was breathtaking &#8212; every guest couldn't stop complimenting."</p><div class="test-auth"><b>Priya Sharma</b><small>Bride, December 2024 &middot; Mumbai</small></div></div>
+<div class="test-slide"><div class="test-qi"><span class="ic ic-xl" style="margin:0 auto;display:flex"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></span></div><div class="test-strs"><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span></div><p class="test-txt">"The personal styling session was incredible. They created a custom Banarasi silk saree that was even more beautiful than I imagined."</p><div class="test-auth"><b>Ananya Patel</b><small>Bride, March 2024 &middot; Pune</small></div></div>
+<div class="test-slide"><div class="test-qi"><span class="ic ic-xl" style="margin:0 auto;display:flex"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></span></div><div class="test-strs"><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span></div><p class="test-txt">"From the first consultation to the final fitting, every moment was magical. Lagnadeep is not just a store, it's an experience every bride deserves."</p><div class="test-auth"><b>Meera Kapoor</b><small>Bride, January 2025 &middot; Delhi</small></div></div>
+</div>
+<div class="test-nav"><button onclick="testNav(-1)"><span class="ic"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></span></button><button onclick="testNav(1)"><span class="ic"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></span></button></div>
+</div>
+</div></section>
+<section class="sec looks"><div class="con">
+<div class="sec-h rv-anim"><span class="sec-ey">Editorial</span><h2 class="sec-t">Featured Bridal Looks</h2><p class="sec-d">Curated ensembles for every celebration in your journey</p></div>
+<div class="looks-grid">
+<div class="look rv-anim"><div class="look-img"><img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=700&h=900&fit=crop&q=85" alt="The Regal Bride" loading="lazy"></div><div class="look-ct"><div class="look-n">01</div><h3 class="look-t">The Regal Bride</h3><p class="look-d">Deep maroon Bandhani lehenga with intricate gold zari work, paired with heritage temple jewellery for the timeless bride.</p><div class="look-det"><span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></span>Hand-tied Bandhani motifs</span><span><span class="ic"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>Pure silk base fabric</span></div><a class="btn-ghost" onclick="go('product',1)" style="margin-top:20px">Shop This Look <span class="ic"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a></div></div>
+<div class="look rv-anim rv-d2"><div class="look-img"><img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=700&h=900&fit=crop&q=85" alt="The Contemporary Muse" loading="lazy"></div><div class="look-ct"><div class="look-n">02</div><h3 class="look-t">The Contemporary Muse</h3><p class="look-d">Indo-Western silhouette in champagne gold with contemporary embellishments, for the bride who dares to be different.</p><div class="look-det"><span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>Fusion silhouette design</span><span><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></span>French chiffon overlay</span></div><a class="btn-ghost" onclick="go('product',9)" style="margin-top:20px">Shop This Look <span class="ic"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a></div></div>
+</div>
+</div></section>
+<section class="sec" style="background:linear-gradient(135deg,var(--dark),var(--maroon-deep));text-align:center;padding:90px 0"><div class="con rv-anim">
+<span class="sec-ey" style="color:var(--gold)">Personalized</span>
+<h2 style="font-family:var(--dsp);font-size:2.5rem;color:var(--white);margin:14px 0;font-weight:500">Discover Your Bridal Style</h2>
+<p style="color:rgba(255,255,255,.4);max-width:460px;margin:0 auto 40px;font-weight:300">Take our curated style quiz and we'll recommend the perfect ensemble for your special day</p>
+<button class="btn btn-g" onclick="openQuiz()">Take the Bridal Quiz</button>
+</div></section>
+<section class="insta">
+<div class="sec-h rv-anim"><span class="sec-ey">Follow Our Journey</span><h2 class="sec-t">@lagnadeepstudio</h2><p class="sec-d">Glimpses of artistry, love, and celebration</p></div>
+<div class="insta-grid">
+<div class="insta-i"><img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=500&h=500&fit=crop&q=85" alt="Royal Saree" loading="lazy"><div class="insta-i-ov"><span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span></div></div>
+<div class="insta-i"><img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=500&h=500&fit=crop&q=85" alt="Bridal Saree Drape" loading="lazy"><div class="insta-i-ov"><span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span></div></div>
+<div class="insta-i"><img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=500&h=500&fit=crop&q=85" alt="Kanjivaram Silk Saree" loading="lazy"><div class="insta-i-ov"><span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span></div></div>
+<div class="insta-i"><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500&h=500&fit=crop&q=85" alt="Banarasi Zari Saree" loading="lazy"><div class="insta-i-ov"><span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span></div></div>
+<div class="insta-i"><img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=500&h=500&fit=crop&q=85" alt="Heritage Red Saree" loading="lazy"><div class="insta-i-ov"><span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span></div></div>
+<div class="insta-i"><img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=500&h=500&fit=crop&q=85" alt="Gold Weave Saree" loading="lazy"><div class="insta-i-ov"><span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span></div></div>
+</div>
+</section>
+<section class="news"><div class="con"><div class="news-in rv-anim"><h2>Join the Lagnadeep Family</h2><p>Be the first to know about new collections, exclusive offers, and bridal inspiration</p><form class="news-form" onsubmit="event.preventDefault();this.querySelector('input').value='';toast('Welcome to the Lagnadeep family!','ok')"><input type="email" placeholder="Enter your email address" required><button type="submit">Subscribe</button></form></div></div></section>
+</div>
+<!-- SHOP -->
+<div class="page" id="pg-shop">
+<section class="sh-hero"><h1 id="shTitle">Our Collection</h1><div class="bc"><a onclick="go('home')">Home</a> / <span id="shBc">Shop</span></div></section>
+<div class="con"><div class="sh-lay">
+<aside class="sh-side" id="shSide">
+<div class="side-srch"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span><input type="text" placeholder="Search products..." id="shSrch" oninput="filterP()"></div>
+<div class="fg"><h3><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span>Category</h3><div class="fo on" data-f="cat" data-v="all" onclick="togF(this)"><span class="fcb"></span>All Categories</div><div class="fo" data-f="cat" data-v="bridal" onclick="togF(this)"><span class="fcb"></span>Bridal Wear</div><div class="fo" data-f="cat" data-v="sarees" onclick="togF(this)"><span class="fcb"></span>Sarees</div><div class="fo" data-f="cat" data-v="contemporary" onclick="togF(this)"><span class="fcb"></span>Contemporary</div></div>
+<div class="fg"><h3><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span>Fabric</h3><div class="fo" data-f="fab" data-v="silk" onclick="togF(this)"><span class="fcb"></span>Silk</div><div class="fo" data-f="fab" data-v="bandhani" onclick="togF(this)"><span class="fcb"></span>Bandhani</div><div class="fo" data-f="fab" data-v="chiffon" onclick="togF(this)"><span class="fcb"></span>Chiffon</div><div class="fo" data-f="fab" data-v="velvet" onclick="togF(this)"><span class="fcb"></span>Velvet</div><div class="fo" data-f="fab" data-v="organza" onclick="togF(this)"><span class="fcb"></span>Organza</div></div>
+<div class="fg"><h3><span class="ic"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>Price Range</h3><div class="pri-rng"><input type="number" class="pri-inp" id="priMin" placeholder="Min" oninput="filterP()"><span>&#8212;</span><input type="number" class="pri-inp" id="priMax" placeholder="Max" oninput="filterP()"></div></div>
+<button class="btn btn-od" style="width:100%;margin-top:14px" onclick="resetF()">Reset Filters</button>
+</aside>
+<div>
+<div class="sh-bar"><span class="rc" id="resC">Showing 12 products</span><div class="sh-sort"><label>Sort:</label><select id="sortSel" onchange="filterP()"><option value="feat">Featured</option><option value="pl">Price: Low to High</option><option value="ph">Price: High to Low</option><option value="new">Newest</option><option value="rate">Top Rated</option></select></div></div>
+<div class="p-grid" id="shProd"></div>
+</div>
+</div></div>
+</div>
+<!-- PRODUCT DETAIL -->
+<div class="page" id="pg-product"><div class="con"><div class="pd"><div class="pd-grid" id="pdCt"></div></div></div><div id="rvSec"></div></div>
+<!-- BRIDAL -->
+<div class="page" id="pg-bridal">
+<section class="sh-hero"><h1>Bridal Collection</h1><div class="bc"><a onclick="go('home')">Home</a> / Bridal Collection</div></section>
+<div class="con"><div class="sec" style="padding-top:44px"><div class="sec-h"><span class="sec-ey">For Your Special Day</span><h2 class="sec-t">Bridal Couture</h2><p class="sec-d">Handcrafted bridal ensembles featuring exquisite Bandhani work, zari embroidery, and the finest silks.</p></div><div class="p-grid" id="brProd"></div></div></div>
+</div>
+<!-- SAREES -->
+<div class="page" id="pg-sarees">
+<section class="sh-hero"><h1>Saree Collection</h1><div class="bc"><a onclick="go('home')">Home</a> / Sarees</div></section>
+<div class="con"><div class="sec" style="padding-top:44px"><div class="sec-h"><span class="sec-ey">Timeless Drapes</span><h2 class="sec-t">Heritage Sarees</h2><p class="sec-d">From the vibrant hues of Bandhani to the rich grandeur of Banarasi and Kanjivaram.</p></div><div class="p-grid" id="saProd"></div></div></div>
+</div>
+<!-- ABOUT -->
+<div class="page" id="pg-about">
+<section class="ab-hero"><img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=1920&h=800&fit=crop&q=85" alt="Heritage Saree"><div class="ab-hero-ov"></div><div class="ab-hero-ct"><h1>Our Story</h1><p>Four Generations of Timeless Craftsmanship</p></div></section>
+<section class="sec"><div class="con"><div class="story-grid">
+<div class="story-img rv-anim"><img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=700&h=900&fit=crop&q=85" alt="Heritage" loading="lazy"></div>
+<div class="story-ct rv-anim rv-d2"><span class="sec-ey">Est. 1982</span><h2 class="sec-t">From a Small Atelier to a Legacy</h2><p class="story-text">In the bustling lanes of Mulund West, Mumbai, our founder began with a simple vision &#8212; to preserve the dying art of Bandhani while creating garments worthy of life's most precious moments.<br><br>Four decades and four generations later, Lagnadeep Studio has dressed thousands of brides across the world.</p></div>
+</div></div></section>
+<section class="sec" style="background:var(--cream)"><div class="con">
+<div class="sec-h rv-anim"><span class="sec-ey">Our Journey</span><h2 class="sec-t">Milestones</h2></div>
+<div class="tl rv-anim">
+<div class="tl-i"><div style="text-align:right"><span class="tl-yr">1982</span></div><div class="tl-ct"><h3>The Beginning</h3><p>Founded as a small textile shop in Mulund West, specializing in traditional Bandhani work.</p></div><div class="tl-dot"></div></div>
+<div class="tl-i"><div class="tl-ct"><h3>Second Generation</h3><p>Expanded into bridal couture, introducing custom bridal lehengas alongside traditional textiles.</p></div><div><span class="tl-yr">1998</span></div><div class="tl-dot"></div></div>
+<div class="tl-i"><div style="text-align:right"><span class="tl-yr">2012</span></div><div class="tl-ct"><h3>National Recognition</h3><p>Won the National Textile Excellence Award. Introduced Banarasi and Kanjivaram collections.</p></div><div class="tl-dot"></div></div>
+<div class="tl-i"><div class="tl-ct"><h3>The New Chapter</h3><p>4th generation joins. Launch of contemporary Indo-Western line and worldwide shipping.</p></div><div><span class="tl-yr">2024</span></div><div class="tl-dot"></div></div>
+</div>
+</div></section>
+<section class="sec"><div class="con">
+<div class="sec-h rv-anim"><span class="sec-ey">Our Craft</span><h2 class="sec-t">The Lagnadeep Process</h2></div>
+<div class="craft-g rv-anim">
+<div class="craft-i"><div class="craft-ic"><span class="ic"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span></div><h3>Consultation</h3><p>Personal styling sessions to understand your vision, body type, and wedding theme.</p></div>
+<div class="craft-i"><div class="craft-ic"><span class="ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span></div><h3>Design & Fabric</h3><p>Custom sketches and fabric selection from our heritage collection of silks and Bandhani.</p></div>
+<div class="craft-i"><div class="craft-ic"><span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span></div><h3>Craftsmanship</h3><p>6-7 weeks of meticulous handwork by our master artisans, with multiple fittings.</p></div>
+</div>
+</div></section>
+</div>
+<!-- CONTACT -->
+<div class="page" id="pg-contact">
+<section class="sh-hero"><h1>Visit Our Studio</h1><div class="bc"><a onclick="go('home')">Home</a> / Contact</div></section>
+<section class="sec"><div class="con"><div class="ct-grid">
+<div class="ct-form">
+<h2 style="font-family:var(--dsp);font-size:1.8rem;margin-bottom:8px;font-weight:500">Book an Appointment</h2>
+<p style="color:var(--text-2);font-size:.86rem;margin-bottom:32px;font-weight:300">Schedule a personal consultation at our studio</p>
+<form id="contactForm" onsubmit="submitContact(event)">
+<div class="fg-row"><div class="fg-l"><label>Full Name *</label><input type="text" id="ctName" placeholder="Your full name" required></div><div class="fg-l"><label>Email *</label><input type="email" id="ctEmail" placeholder="your@email.com" required></div></div>
+<div class="fg-row"><div class="fg-l"><label>Phone *</label><input type="tel" id="ctPhone" placeholder="+91 XXXXX XXXXX" required></div><div class="fg-l"><label>Preferred Date</label><input type="date" id="ctDate"></div></div>
+<div class="fg-l"><label>Subject *</label><select id="ctSubject" required><option value="">Select a subject</option><option>Bridal Consultation</option><option>Saree Selection</option><option>Custom Order</option><option>General Inquiry</option><option>Store Visit</option></select></div>
+<div class="fg-l"><label>Message *</label><textarea id="ctMsg" placeholder="Tell us about your requirements..." required></textarea></div>
+<button type="submit" class="btn btn-p" id="ctSubmitBtn" style="width:100%"><span class="ic ic-sm"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></span>Send Enquiry</button>
+<div class="form-status" id="ctStatus"></div>
+</form>
+</div>
+<div class="ct-info">
+<div class="ct-info-i"><h4><span class="ic"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>Visit Us</h4><p>Shop No. B/13-15, Jalaram Ashish Society,<br>Devidayal Road, Opp. Raj Hospital,<br>Mulund West, Mumbai - 400080</p></div>
+<div class="ct-info-i"><h4><span class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>Call Us</h4><p><a href="tel:+917666622229">+91 76666 22229</a><br><a href="https://wa.me/917977245856">WhatsApp: +91 79772 45856</a></p></div>
+<div class="ct-info-i"><h4><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>Working Hours</h4><p>10:30 AM - 9:00 PM<br>Closed on Thursdays</p></div>
+<a href="https://maps.app.goo.gl/UExa4kyjEsLeYbVF8" target="_blank" class="btn btn-g" style="margin-top:24px;width:100%"><span class="ic ic-sm"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>Get Directions on Google Maps</a>
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.0!2d72.95!3d19.17!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMulund+West%2C+Mumbai!5e0!3m2!1sen!2sin!4v1" allowfullscreen loading="lazy"></iframe>
+</div>
+</div></div></section>
+</div>
+<!-- CART -->
+<div class="page" id="pg-cart">
+<section class="sh-hero"><h1>Shopping Bag</h1><div class="bc"><a onclick="go('home')">Home</a> / Shopping Bag</div></section>
+<section class="sec cart-sec"><div class="con" id="cartCt"></div></section>
+</div>
+<!-- WISHLIST -->
+<div class="page" id="pg-wishlist">
+<section class="sh-hero"><h1>Your Wishlist</h1><div class="bc"><a onclick="go('home')">Home</a> / Wishlist</div></section>
+<section class="sec"><div class="con"><div id="wlEmpty"></div><div class="p-grid" id="wlProd"></div></div></section>
+</div>
+<!-- CHECKOUT -->
+<div class="page" id="pg-checkout">
+<section class="sh-hero"><h1>Checkout</h1><div class="bc"><a onclick="go('home')">Home</a> / <a onclick="go('cart')">Bag</a> / Checkout</div></section>
+<section class="sec"><div class="con">
+<form id="coForm" onsubmit="handleCO(event)">
+<div class="co-grid">
+<div>
+<div class="co-sec"><h3><span class="ic"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>Shipping Details</h3>
+<div class="fg-row"><div class="fg-l"><label>First Name *</label><input type="text" id="coFn" required placeholder="First name"></div><div class="fg-l"><label>Last Name *</label><input type="text" id="coLn" required placeholder="Last name"></div></div>
+<div class="fg-row"><div class="fg-l"><label>Email *</label><input type="email" id="coEm" required placeholder="your@email.com"></div><div class="fg-l"><label>Phone *</label><input type="tel" id="coPh" required placeholder="+91 XXXXX XXXXX"></div></div>
+<div class="fg-l"><label>Address *</label><input type="text" id="coAd" required placeholder="Street address, apartment/suite"></div>
+<div class="fg-row"><div class="fg-l"><label>City *</label><input type="text" id="coCi" required placeholder="City"></div><div class="fg-l"><label>State *</label><input type="text" id="coSt" required placeholder="State"></div></div>
+<div class="fg-row"><div class="fg-l"><label>PIN Code *</label><input type="text" id="coPc" required placeholder="400080" pattern="\d{6}"></div><div class="fg-l"><label>Landmark</label><input type="text" id="coLm" placeholder="Near..."></div></div>
+<div class="fg-l"><label>Order Notes</label><textarea id="coNotes" placeholder="Special instructions, custom measurements..."></textarea></div>
+</div>
+<div class="co-sec"><h3><span class="ic"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>Payment Method</h3>
+<div class="pay-opts">
+<div class="pay-o sel" onclick="selPay(this,'upi')"><input type="radio" name="pay" value="upi" checked><div class="pay-o-ic" style="background:#5f259f;color:#fff;font-size:.65rem;font-weight:700">UPI</div><div class="pay-o-info"><b>UPI Payment</b><small>Google Pay, PhonePe, Paytm, BHIM</small></div></div>
+<div class="pay-o" onclick="selPay(this,'card')"><input type="radio" name="pay" value="card"><div class="pay-o-ic" style="background:#1a1f71;color:#fff;font-size:.55rem;font-weight:700;letter-spacing:.05em">VISA</div><div class="pay-o-info"><b>Credit / Debit Card</b><small>Visa, Mastercard, RuPay</small></div></div>
+<div class="pay-o" onclick="selPay(this,'net')"><input type="radio" name="pay" value="net"><div class="pay-o-ic" style="background:var(--cream)"><span class="ic" style="color:var(--maroon)"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></span></div><div class="pay-o-info"><b>Net Banking</b><small>All major Indian banks</small></div></div>
+<div class="pay-o" onclick="selPay(this,'cod')"><input type="radio" name="pay" value="cod"><div class="pay-o-ic" style="background:var(--cream)"><span class="ic" style="color:var(--ok)"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span></div><div class="pay-o-info"><b>Cash on Delivery</b><small>Pay when you receive</small></div></div>
+</div>
+<div id="upiSec">
+<div class="upi-apps">
+<div class="upi-btn on" onclick="selUpi(this,'gpay')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/512px-Google_Pay_Logo.svg.png" alt="Google Pay"><span>Google Pay</span></div>
+<div class="upi-btn" onclick="selUpi(this,'phonepe')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/PhonePe_Logo.svg/512px-PhonePe_Logo.svg.png" alt="PhonePe"><span>PhonePe</span></div>
+<div class="upi-btn" onclick="selUpi(this,'paytm')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Paytm_Logo_%28standalone%29.svg/512px-Paytm_Logo_%28standalone%29.svg.png" alt="Paytm"><span>Paytm</span></div>
+<div class="upi-btn" onclick="selUpi(this,'bhim')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/512px-UPI-Logo-vector.svg.png" alt="BHIM UPI"><span>BHIM UPI</span></div>
+</div>
+<div class="upi-id"><input type="text" id="upiInp" placeholder="Enter UPI ID (name@upi)"><button type="button" onclick="verUpi()">Verify</button></div>
+</div>
+<div class="pay-secure"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>256-bit SSL encrypted. Your payment information is secure.</div>
+</div>
+<button type="submit" class="btn btn-p" id="coSubmitBtn" style="width:100%;padding:20px"><span class="ic ic-sm"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>Place Order</button>
+<div class="form-status" id="coStatus"></div>
+</div>
+<div><div class="co-sum-card" id="coSum"></div></div>
+</div>
+</form>
+</div></section>
+</div>
+<!-- FOOTER -->
+<footer>
+<div class="con">
+<div class="ft-grid">
+<div class="ft-brand"><b>Lagnadeep</b><small>Studio &middot; Est. 1982</small><p>Four generations of handcrafted bridal couture, Bandhani textiles, and luxury Indian fashion from the heart of Mumbai.</p><div class="ft-soc" style="margin-top:24px">
+<a href="#" title="Instagram"><span class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span></a>
+<a href="#" title="Facebook"><span class="ic"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></span></a>
+<a href="#" title="Pinterest"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6c-2.21 0-4 1.79-4 4 0 1.5.81 2.77 2 3.46l-.02.54c-.06 1.37-.19 2.51-.33 3l2.35-.82c.32.07.65.12 1 .12 2.21 0 4-1.79 4-4s-1.79-4-4-4z" fill="currentColor" stroke="none"/></svg></span></a>
+<a href="#" title="YouTube"><span class="ic"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" stroke="none"/></svg></span></a>
+</div></div>
+<div class="ft-col"><h4>Collections</h4><a onclick="go('shop','bridal')">Bridal Lehengas</a><a onclick="go('shop','sarees')">Heritage Sarees</a><a onclick="go('shop','contemporary')">Contemporary</a><a onclick="go('shop')">New Arrivals</a><a onclick="go('shop')">Festive Edit</a></div>
+<div class="ft-col"><h4>Information</h4><a onclick="go('about')">Our Story</a><a onclick="go('contact')">Visit Store</a><a>Shipping Policy</a><a>Returns</a><a>Size Guide</a></div>
+<div class="ft-col"><h4>Contact</h4><a href="tel:+917666622229">+91 76666 22229</a><a href="https://wa.me/917977245856">WhatsApp</a><a>info@lagnadeepstudio.com</a><a onclick="go('contact')">Book Appointment</a></div>
+</div>
+<div class="ft-bot"><span>&copy; 2025 Lagnadeep Studio. All Rights Reserved.</span><span>Crafted with love in Mumbai, India</span></div>
+</div>
+</footer>
+<script>
+﻿/* ===== LUXURY AUDIO CHIMES (WEB AUDIO API) ===== */
+var AudioSys = (function(){
+  var ctx = null;
+  var enabled = true;
+  function init(){
+    if(!ctx) {
+      try {
+        var AC = window.AudioContext || window.webkitAudioContext;
+        if(AC) ctx = new AC();
+      } catch(e){}
+    }
+  }
+  function playChime(type){
+    if(!enabled) return;
+    init();
+    if(!ctx) return;
+    if(ctx.state === "suspended") ctx.resume();
+    var now = ctx.currentTime;
+    var osc = ctx.createOscillator();
+    var gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    
+    if(type === "add"){
+      // Luxurious warm harp chime chord
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(523.25, now); // C5
+      osc.frequency.exponentialRampToValueAtTime(783.99, now + 0.15); // G5
+      gain.gain.setValueAtTime(0.08, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+      osc.start(now);
+      osc.stop(now + 0.6);
+    } else if(type === "quiz"){
+      // Celebratory sparkle harmonic
+      osc.type = "triangle";
+      osc.frequency.setValueAtTime(659.25, now);
+      osc.frequency.exponentialRampToValueAtTime(1046.50, now + 0.25);
+      gain.gain.setValueAtTime(0.1, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.8);
+      osc.start(now);
+      osc.stop(now + 0.8);
+    } else {
+      // Soft gentle tap
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(440, now);
+      gain.gain.setValueAtTime(0.04, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+      osc.start(now);
+      osc.stop(now + 0.25);
+    }
+  }
+  function toggle(){
+    enabled = !enabled;
+    var btn = document.getElementById("sndBtn");
+    if(btn) {
+      btn.classList.toggle("muted", !enabled);
+      toast(enabled ? "Sound Ambiance Enabled" : "Sound Muted", "info");
+    }
+    return enabled;
+  }
+  return { play: playChime, toggle: toggle, isEnabled: function(){ return enabled; } };
+})();
+
+/* ===== LUXURY CUSTOM CURSOR ===== */
+function initCursor(){
+  var dot = document.getElementById("cDot");
+  var ring = document.getElementById("cRing");
+  if(!dot || !ring) return;
+  var mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
+  var ringX = mouseX, ringY = mouseY;
+  
+  window.addEventListener("mousemove", function(e){
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    dot.style.left = mouseX + "px";
+    dot.style.top = mouseY + "px";
+  });
+  
+  function animRing(){
+    ringX += (mouseX - ringX) * 0.18;
+    ringY += (mouseY - ringY) * 0.18;
+    ring.style.left = ringX + "px";
+    ring.style.top = ringY + "px";
+    requestAnimationFrame(animRing);
+  }
+  requestAnimationFrame(animRing);
+  
+  document.addEventListener("mouseover", function(e){
+    if(e.target.closest("a, button, .p-card, .col-card, .at-tab, .sz-btn, input, select, textarea, .quiz-opt")){
+      ring.classList.add("active");
+    }
+  });
+  document.addEventListener("mouseout", function(e){
+    if(e.target.closest("a, button, .p-card, .col-card, .at-tab, .sz-btn, input, select, textarea, .quiz-opt")){
+      ring.classList.remove("active");
+    }
+  });
+}
+
+/* ===== CELEBRATORY CONFETTI & GOLD SPARKLES ===== */
+function fireConfetti(){
+  var canvas = document.getElementById("confettiCanvas");
+  if(!canvas) return;
+  var ctx = canvas.getContext("2d");
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  
+  var particles = [];
+  var colors = ["#C4A35A", "#D4B96A", "#6B1D2A", "#8B2E3D", "#F3EDE4", "#FFF"];
+  for(var i = 0; i < 90; i++){
+    particles.push({
+      x: canvas.width / 2 + (Math.random() - 0.5) * 200,
+      y: canvas.height * 0.4 + (Math.random() - 0.5) * 100,
+      vx: (Math.random() - 0.5) * 16,
+      vy: Math.random() * -12 - 4,
+      size: Math.random() * 8 + 4,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      rotation: Math.random() * 360,
+      rotSpeed: (Math.random() - 0.5) * 10,
+      opacity: 1
+    });
+  }
+  
+  AudioSys.play("quiz");
+  
+  var startTime = Date.now();
+  function render(){
+    var elapsed = (Date.now() - startTime) / 1000;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    var active = false;
+    particles.forEach(function(p){
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vy += 0.4; // gravity
+      p.vx *= 0.98; // air resistance
+      p.rotation += p.rotSpeed;
+      p.opacity = Math.max(0, 1 - (elapsed / 3));
+      
+      if(p.opacity > 0 && p.y < canvas.height){
+        active = true;
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate((p.rotation * Math.PI) / 180);
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = p.opacity;
+        ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.6);
+        ctx.restore();
+      }
+    });
+    
+    if(active && elapsed < 3.2){
+      requestAnimationFrame(render);
+    } else {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+  }
+  requestAnimationFrame(render);
+}
+
+/* ===== 3D CARD TILT EFFECT ===== */
+function initTilt(){
+  var cards = document.querySelectorAll(".p-card, .col-card");
+  cards.forEach(function(card){
+    card.addEventListener("mousemove", function(e){
+      var rect = card.getBoundingClientRect();
+      var x = e.clientX - rect.left;
+      var y = e.clientY - rect.top;
+      var cx = rect.width / 2;
+      var cy = rect.height / 2;
+      var rotX = ((y - cy) / cy) * -6;
+      var rotY = ((x - cx) / cx) * 6;
+      card.style.transform = "perspective(1000px) rotateX(" + rotX + "deg) rotateY(" + rotY + "deg) translateY(-8px)";
+    });
+    card.addEventListener("mouseleave", function(){
+      card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)";
+    });
+  });
+}
+
+/* ===== ANIMATED NUMBER COUNTERS (COUNTUP) ===== */
+function initCounters(){
+  var statElems = document.querySelectorAll(".stat h3");
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        var el = entry.target;
+        var text = el.textContent.trim();
+        var hasPlus = text.indexOf("+") > -1;
+        var isFloat = text.indexOf(".") > -1;
+        var targetVal = parseFloat(text.replace(/[^0-9.]/g, ""));
+        if(!isNaN(targetVal) && !el.dataset.counted){
+          el.dataset.counted = "true";
+          var duration = 1800;
+          var startTime = performance.now();
+          function updateNum(currentTime){
+            var progress = Math.min((currentTime - startTime) / duration, 1);
+            // Easing out cubic
+            var ease = 1 - Math.pow(1 - progress, 3);
+            var currentVal = targetVal * ease;
+            if(isFloat){
+              el.textContent = currentVal.toFixed(1) + (hasPlus ? "+" : "");
+            } else {
+              el.textContent = Math.floor(currentVal) + (hasPlus ? "+" : "");
+            }
+            if(progress < 1){
+              requestAnimationFrame(updateNum);
+            } else {
+              el.textContent = text;
+            }
+          }
+          requestAnimationFrame(updateNum);
+        }
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.2 });
+  statElems.forEach(function(el){ observer.observe(el); });
+}
+
+/* ===== ARTISANAL ATELIER SECTION ===== */
+var ATELIER_DATA = [
+  {
+    title: "The Art of Bandhani Tie-Dye",
+    tag: "10,000+ Hand-Tied Knots",
+    desc: "Every Lagnadeep Bandhani piece begins with our master artisans in Gujarat tying thousands of minuscule thread knots by hand onto pure silk. Draped in authentic natural vegetable and heritage mineral dyes, the fabric undergoes multiple immersions to create intricate, spellbinding constellations.",
+    img: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=700&h=900&fit=crop&q=85",
+    features: ["100% Hand-tied Motifs", "Pure Mulberry Silk Base", "Natural Heritage Dyeing", "70+ Days Crafting Time"]
+  },
+  {
+    title: "Pure Banarasi Zari Weaving",
+    tag: "Real Gold & Silver Threads",
+    desc: "Woven on traditional pit looms in Varanasi, our Banarasi sarees carry the regal legacy of Mughal royalty. Woven with pure electroplated gold and silver zari, each motif tells a poetic tale of paisleys, jaals, and temple floras.",
+    img: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=700&h=900&fit=crop&q=85",
+    features: ["Certified Real Zari", "Traditional Kadwa Weave", "Intricate Shikargah Motifs", "Generational Heirloom"]
+  },
+  {
+    title: "Heritage Kanjivaram Temple Silks",
+    tag: "3-Ply Mulberry Silk",
+    desc: "From the sacred temple town of Kanchipuram, our Kanjivaram silks are woven with heavy 3-ply silk yarn and pure silver zari border interlocks (Korvai technique). Durable, shimmering, and divinely consecrated.",
+    img: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=700&h=900&fit=crop&q=85",
+    features: ["Authentic Korvai Interlock", "Heavy 3-Ply Silk", "Temple & Peacock Borders", "Grand Handwoven Pallu"]
+  },
+  {
+    title: "Royal Velvet & Zardozi Couture",
+    tag: "French Metallic Bullion Wire",
+    desc: "For grand evening receptions and royal sangeets, our jewel-toned velvet lehengas feature hand-embroidered Zardozi, dabka, resham silk thread, and semi-precious stone embellishments crafted stitch-by-stitch.",
+    img: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=700&h=900&fit=crop&q=85",
+    features: ["Royal Micro-Velvet Base", "Handcrafted Zardozi & Dabka", "Swarovski Crystal Accents", "Bespoke 3D Embroidery"]
+  }
+];
+
+function switchAtelier(idx){
+  var tabs = document.querySelectorAll(".at-tab");
+  tabs.forEach(function(t, i){ t.classList.toggle("on", i === idx); });
+  var data = ATELIER_DATA[idx];
+  var box = document.getElementById("atContentBox");
+  if(!box) return;
+  box.innerHTML = '<div class="at-img-box"><span class="at-badge">' + data.tag + '</span><img src="' + data.img + '" alt="' + data.title + '" loading="lazy"></div>' +
+    '<div class="at-desc"><span class="sec-ey">Master Craft</span><h3>' + data.title + '</h3><p>' + data.desc + '</p>' +
+    '<div class="at-features">' + data.features.map(function(f){ return '<div class="at-feat"><span class="ic">' + IC.layers + '</span>' + f + '</div>'; }).join("") + '</div>' +
+    '<a class="btn btn-p" onclick="go(\'shop\')">Explore Artistry</a></div>';
+  AudioSys.play("click");
+}
+
+/* ===== SIZE GUIDE MODAL ===== */
+function openSizeGuide(){
+  document.getElementById("sizeGuideMod").classList.add("on");
+  AudioSys.play("click");
+}
+function selSzTab(type){
+  document.querySelectorAll(".sz-unit-btn").forEach(function(b){ b.classList.remove("on"); });
+  event.target.classList.add("on");
+  var isInch = type === "in";
+  var rows = document.querySelectorAll(".sz-table tbody tr");
+  var lehengaData = [
+    { sz: "XS", wIn: "24-26", wCm: "61-66", lIn: "42", lCm: "107", hIn: "34-36", hCm: "86-91" },
+    { sz: "S",  wIn: "26-28", wCm: "66-71", lIn: "42", lCm: "107", hIn: "36-38", hCm: "91-96" },
+    { sz: "M",  wIn: "28-30", wCm: "71-76", lIn: "43", lCm: "109", hIn: "38-40", hCm: "96-102" },
+    { sz: "L",  wIn: "30-32", wCm: "76-81", lIn: "43", lCm: "109", hIn: "40-42", hCm: "102-107" },
+    { sz: "XL", wIn: "32-35", wCm: "81-89", lIn: "44", lCm: "112", hIn: "42-45", hCm: "107-114" }
+  ];
+  var tbody = document.querySelector(".sz-table tbody");
+  if(tbody){
+    tbody.innerHTML = lehengaData.map(function(d){
+      return '<tr><td><b>' + d.sz + '</b></td><td>' + (isInch ? d.wIn + '"' : d.wCm + ' cm') + '</td><td>' + (isInch ? d.hIn + '"' : d.hCm + ' cm') + '</td><td>' + (isInch ? d.lIn + '"' : d.lCm + ' cm') + '</td></tr>';
+    }).join("");
+  }
+}
+
+/* ===== PROMO CODE DISCOUNT ===== */
+var PROMO_CODE = { code: "ROYAL10", discountPercent: 10, applied: false };
+function applyPromo(){
+  var inp = document.getElementById("promoInp");
+  if(!inp) return;
+  var val = inp.value.trim().toUpperCase();
+  if(val === PROMO_CODE.code){
+    PROMO_CODE.applied = true;
+    fireConfetti();
+    toast("Privilege Code Applied: 10% Royal Savings Unlocked!", "ok");
+    renderCart();
+  } else {
+    toast("Invalid code. Try 'ROYAL10'", "err");
+  }
+}
+
+/* ===== ICONS ===== */
+var IC={
+heart:'<span class="ic"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>',
+bag:'<span class="ic ic-xl"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>',
+eye:'<span class="ic"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>',
+star:'<span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>',
+close:'<span class="ic"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>',
+arrow:'<span class="ic"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>',
+check:'<span class="ic"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>',
+layers:'<span class="ic" style="width:12px;height:12px;color:var(--gold)"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg></span>'
+};
+/* ===== PRODUCTS ===== */
+var PRODUCTS=[
+{id:1,name:'Bandhani Bridal Lehenga Saree',category:'bridal',price:185000,originalPrice:225000,rating:4.9,reviews:234,fabric:'bandhani',badge:'Bestseller',description:'Exquisite deep maroon Bandhani bridal ensemble featuring over 10,000 hand-tied knots, intricate gold zari border work, and a flowing 5-meter flare. Paired with an opulent matching drape adorned with temple motifs.',img:'https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=700&h=900&fit=crop&q=85',imgs:['https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=700&h=900&fit=crop&q=85'],sizes:['XS','S','M','L','XL','Custom'],fabricDetails:['Pure Silk Base','Hand-tied Bandhani','Gold Zari Border','Sequin Embellishments'],featured:true},
+{id:2,name:'Royal Banarasi Silk Saree',category:'sarees',price:78000,originalPrice:95000,rating:4.8,reviews:189,fabric:'silk',badge:'Heritage',description:'A regal Banarasi silk saree handwoven with pure gold and silver zari threads in Varanasi. Features traditional butta motifs, kadwa floral weave, and an elaborate pallu with royal peacock designs.',img:'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=700&h=900&fit=crop&q=85',imgs:['https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=700&h=900&fit=crop&q=85'],sizes:['Free Size','Petite','Tall'],fabricDetails:['Pure Banarasi Silk','Real Gold Zari','Handwoven Kadwa'],featured:true},
+{id:3,name:'Kanjivaram Temple Silk Saree',category:'sarees',price:92000,rating:4.9,reviews:156,fabric:'silk',badge:'Premium',description:'Authentic Kanjivaram silk saree in deep temple crimson with contrasting gold brocade border. Handwoven with heavy 3-ply mulberry silk yarn and pure silver zari interlock.',img:'https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=700&h=900&fit=crop&q=85',imgs:['https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=700&h=900&fit=crop&q=85'],sizes:['Free Size','Petite','Tall'],fabricDetails:['Pure Kanjivaram Silk','Temple Korvai Border','Gold Zari Woven'],featured:true},
+{id:4,name:'Champagne Gold Organza Saree',category:'bridal',price:145000,rating:4.7,reviews:98,fabric:'organza',badge:'New',description:'A luminous champagne gold organza drape saree featuring delicate scalloped borders, Swarovski crystal hand-embroidery, and an intricately worked designer blouse piece.',img:'https://images.unsplash.com/photo-1617137968427-85924c800a22?w=700&h=900&fit=crop&q=85',imgs:['https://images.unsplash.com/photo-1617137968427-85924c800a22?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=700&h=900&fit=crop&q=85'],sizes:['XS','S','M','L','XL','Custom'],fabricDetails:['Italian Pure Organza','Swarovski Crystals','Scalloped Zari'],featured:true},
+{id:5,name:'Crimson Bridal Heritage Saree',category:'bridal',price:125000,rating:4.8,reviews:118,fabric:'silk',badge:'Bespoke',description:'Majestic crimson bridal silk saree featuring heritage floral vine zari borders and hand-embroidered gota patti work for the sacred wedding ceremony.',img:'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=700&h=900&fit=crop&q=85',imgs:['https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=700&h=900&fit=crop&q=85'],sizes:['Free Size','Custom Blouse'],fabricDetails:['Heritage Silk','Gold Gota Patti','Resham Embroidery'],featured:true},
+{id:6,name:'Emerald Bandhani Silk Saree',category:'sarees',price:45000,rating:4.6,reviews:203,fabric:'bandhani',description:'Vibrant emerald green Bandhani saree with traditional tie-dye dots, gold foil weave, and temple pallu. Lightweight, flowing, and regal for wedding festivities.',img:'https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?w=700&h=900&fit=crop&q=85',imgs:['https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=700&h=900&fit=crop&q=85'],sizes:['Free Size'],fabricDetails:['Georgette Silk','Traditional Bandhani','Gold Zari Border']},
+{id:7,name:'Pastel Chiffon Drape Saree',category:'sarees',price:38000,rating:4.5,reviews:134,fabric:'chiffon',description:'Delicate blush pastel chiffon saree with contemporary pre-pleated drape and subtle pearl and cutdana border embellishments.',img:'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=700&h=900&fit=crop&q=85',imgs:['https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=700&h=900&fit=crop&q=85'],sizes:['Free Size','Petite'],fabricDetails:['Pure Chiffon','Pearl Embellishments','Pre-draped Silhouette']},
+{id:8,name:'Royal Red Zari Wedding Saree',category:'sarees',price:65000,rating:4.7,reviews:88,fabric:'silk',description:'Timeless scarlet red wedding saree with opulent gold zari jaal weaving and intricate temple paisley pallu. A masterclass in Indian textile artistry.',img:'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=700&h=900&fit=crop&q=85',imgs:['https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=700&h=900&fit=crop&q=85'],sizes:['Free Size','Custom'],fabricDetails:['Pure Brocade Silk','Intricate Gold Weave','Satin Backing']},
+{id:9,name:'Indo-Western Pre-Draped Saree',category:'contemporary',price:155000,rating:4.8,reviews:112,fabric:'organza',badge:'Trending',description:'A breathtaking modern bridal drape fusing authentic Indian zardozi embroidery with a structured contemporary silhouette and trailing pleated pallu.',img:'https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=700&h=900&fit=crop&q=85',imgs:['https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=700&h=900&fit=crop&q=85'],sizes:['XS','S','M','L','Custom'],fabricDetails:['Italian Silk Organza','Zardozi Embroidery','Corset Boning'],featured:true},
+{id:10,name:'Marigold Haldi Silk Saree',category:'bridal',price:55000,rating:4.6,reviews:145,fabric:'silk',description:'Radiant marigold yellow silk saree with hand-tied Bandhej dots and shimmering mirror work designed for pre-wedding haldi and mehendi festivities.',img:'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=700&h=900&fit=crop&q=85',imgs:['https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=700&h=900&fit=crop&q=85'],sizes:['Free Size','Custom Blouse'],fabricDetails:['Pure Georgette Silk','Mirror Work','Gota Border']},
+{id:11,name:'Ivory Gold Tissue Saree',category:'contemporary',price:88000,rating:4.7,reviews:79,fabric:'organza',description:'Ethereal ivory gold metallic tissue saree with delicate zardozi border work and a feathered tassel pallu. A showstopping choice for receptions.',img:'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=700&h=900&fit=crop&q=85',imgs:['https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=700&h=900&fit=crop&q=85'],sizes:['Free Size','Custom'],fabricDetails:['Metallic Gold Tissue','Thread Embroidery','Tassel Pallu']},
+{id:12,name:'Velvet Heritage Drape Saree',category:'contemporary',price:72000,rating:4.6,reviews:91,fabric:'velvet',description:'Regal velvet drape saree with antique gold zardozi embroidery along the border and heavy embroidered designer blouse piece.',img:'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=700&h=900&fit=crop&q=85',imgs:['https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=700&h=900&fit=crop&q=85','https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=700&h=900&fit=crop&q=85'],sizes:['Free Size','Custom Blouse'],fabricDetails:['Luxury Velvet Border','Zardozi Embroidery','Satin Inner']}
+];
+/* ===== STATE ===== */
+var S=JSON.parse(localStorage.getItem('ld_state'))||{cart:[],wl:[],rv:[],fl:{cat:'all',fab:[],s:'',pMin:0,pMax:Infinity,sort:'feat'},hs:0,ti:0,pay:'upi',upiApp:'gpay',qs:0,qa:{}};
+function save(){localStorage.setItem('ld_state',JSON.stringify(S));}
+function fmt(n){return '\u20B9'+n.toLocaleString('en-IN');}
+function stars(r){var h='';for(var i=0;i<5;i++){h+='<span class="ic"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>';}return h;}
+function pCard(p){
+var isWl=S.wl.indexOf(p.id)>-1;
+var cl=p.category==='bridal'?'Bridal Wear':p.category==='sarees'?'Sarees':'Contemporary';
+return '<div class="p-card"><div class="p-img">'+(p.badge?'<span class="p-badge">'+p.badge+'</span>':'')+'<div class="p-acts"><button class="p-act'+(isWl?' wl':'')+'" onclick="event.stopPropagation();togWl('+p.id+')">'+IC.heart+'</button><button class="p-act" onclick="event.stopPropagation();openQV('+p.id+')">'+IC.eye+'</button></div><div class="p-qv" onclick="openQV('+p.id+')">'+IC.eye+' Quick View</div><img src="'+p.img+'" alt="'+p.name+'" loading="lazy"></div><div class="p-info"><div class="p-cat">'+cl+'</div><div class="p-name" onclick="go(\'product\','+p.id+')">'+p.name+'</div><div class="p-fab">'+p.fabricDetails[0]+'</div><div class="p-price-row"><span class="p-price">'+fmt(p.price)+'</span>'+(p.originalPrice?'<span class="p-price-og">'+fmt(p.originalPrice)+'</span>':'')+'</div><div class="p-stars"><div class="stars">'+stars(p.rating)+'</div><span>'+p.rating+' ('+p.reviews+')</span></div></div></div>';
+}
+function renderFeat(){
+var el=document.getElementById('featProd');
+if(!el)return;
+var fp=PRODUCTS.filter(function(p){return p.featured;});
+el.innerHTML=fp.map(function(p){return pCard(p);}).join('');
+}
+function filterP(){
+  var catEl = document.querySelector('[data-f="cat"].on');
+  S.fl.cat = catEl ? catEl.dataset.v : 'all';
+  S.fl.fab = Array.from(document.querySelectorAll('[data-f="fab"].on')).map(function(el){ return el.dataset.v; });
+  var s = document.getElementById('shSrch');
+  S.fl.s = s ? s.value.toLowerCase() : '';
+  var pm = document.getElementById('priMin');
+  var px = document.getElementById('priMax');
+  S.fl.pMin = pm && pm.value ? parseInt(pm.value) : 0;
+  S.fl.pMax = px && px.value ? parseInt(px.value) : Infinity;
+  S.fl.sort = document.getElementById('sortSel') ? document.getElementById('sortSel').value : 'feat';
+  renderShop();
+}
+function renderShop(){
+var el=document.getElementById('shProd');
+if(!el)return;
+var srch = S.fl.s;
+var pMin = S.fl.pMin;
+var pMax = S.fl.pMax;
+var sort = S.fl.sort;
+var cat = S.fl.cat;
+var fab = S.fl.fab;
+var res=PRODUCTS.filter(function(p){
+if(cat!=='all'&&p.category!==cat)return false;
+if(fab.length>0&&fab.indexOf(p.fabric)===-1)return false;
+if(p.price<pMin||p.price>pMax)return false;
+if(srch&&p.name.toLowerCase().indexOf(srch)===-1&&p.category.indexOf(srch)===-1&&p.fabric.indexOf(srch)===-1)return false;
+return true;
+});
+if(sort==='pl')res.sort(function(a,b){return a.price-b.price;});
+if(sort==='ph')res.sort(function(a,b){return b.price-a.price;});
+if(sort==='rate')res.sort(function(a,b){return b.rating-a.rating;});
+if(sort==='new')res.sort(function(a,b){return b.id-a.id;});
+el.innerHTML=res.length?res.map(function(p){return pCard(p);}).join(''):'<div style="grid-column:1/-1;text-align:center;padding:80px 0;color:var(--text-3)"><h3 style="font-family:var(--dsp);font-size:1.5rem;color:var(--text);font-weight:500">No products found</h3><p style="margin-top:8px">Try adjusting your filters</p></div>';
+var rc=document.getElementById('resC');
+if(rc)rc.textContent='Showing '+res.length+' product'+(res.length!==1?'s':'');
+}
+function go(pg,param){
+document.querySelectorAll('.page').forEach(function(p){p.classList.remove('on');});
+var el=document.getElementById('pg-'+pg);
+if(el)el.classList.add('on');
+window.scrollTo({top:0,behavior:'smooth'});
+if(pg==='shop'){
+if(param){
+  document.querySelectorAll('[data-f="cat"]').forEach(function(f){ f.classList.toggle('on', f.dataset.v === param); });
+  document.querySelectorAll('[data-f="fab"]').forEach(function(f){ f.classList.remove('on'); });
+  var ss = document.getElementById('shSrch');
+  if(ss) ss.value = '';
+  var pm = document.getElementById('priMin');
+  var px = document.getElementById('priMax');
+  if(pm) pm.value = '';
+  if(px) px.value = '';
+  var so = document.getElementById('sortSel');
+  if(so) so.value = 'feat';
+  filterP();
+}
+var titles={bridal:'Bridal Collection',sarees:'Saree Collection',contemporary:'Contemporary Collection'};
+var t=document.getElementById('shTitle');var bc=document.getElementById('shBc');
+if(param&&titles[param]){if(t)t.textContent=titles[param];if(bc)bc.textContent=titles[param];}
+else{if(t)t.textContent='Our Collection';if(bc)bc.textContent='Shop';}
+filterP();
+}
+else if(pg==='bridal'){document.getElementById('brProd').innerHTML=PRODUCTS.filter(function(p){return p.category==='bridal';}).map(function(p){return pCard(p);}).join('');}
+else if(pg==='sarees'){document.getElementById('saProd').innerHTML=PRODUCTS.filter(function(p){return p.category==='sarees';}).map(function(p){return pCard(p);}).join('');}
+else if(pg==='product'){renderPD(typeof param==='number'?param:parseInt(param));}
+else if(pg==='cart'){renderCart();}
+else if(pg==='wishlist'){renderWL();}
+else if(pg==='checkout'){renderCO();}
+setTimeout(initRev,100);
+}
+function renderPD(id){
+var p=PRODUCTS.find(function(pr){return pr.id===id;});
+if(!p)return;
+if(S.rv.indexOf(id)===-1){S.rv.unshift(id);if(S.rv.length>10)S.rv.pop();save();}
+var cl=p.category==='bridal'?'Bridal Wear':p.category==='sarees'?'Sarees':'Contemporary';
+var h='<div><div class="gal-main" onclick="openZoom(\''+p.img+'\')"><img src="'+p.img+'" alt="'+p.name+'" id="galMainImg"></div><div class="gal-thumbs">';
+for(var i=0;i<p.imgs.length;i++){
+h+='<div class="gal-th'+(i===0?' on':'')+'" onclick="chgThumb(this,\''+p.imgs[i]+'\')"><img src="'+p.imgs[i]+'" alt="Thumb"></div>';
+}
+h+='</div></div>';
+h+='<div class="pd-info"><div class="pd-bc"><a onclick="go(\'home\')">Home</a> / <a onclick="go(\'shop\')">Shop</a> / '+cl+'</div>';
+h+='<h1 class="pd-title">'+p.name+'</h1>';
+h+='<div class="pd-price">'+fmt(p.price)+(p.originalPrice?' <span style="font-size:.9rem;color:var(--text-3);text-decoration:line-through;font-weight:300;margin-left:8px">'+fmt(p.originalPrice)+'</span>':'')+'</div>';
+h+='<div class="pd-rating"><div class="stars">'+stars(p.rating)+'</div><span>'+p.rating+' ('+p.reviews+' reviews)</span></div>';
+h+='<p class="pd-desc">'+p.description+'</p>';
+h+='<div class="det-sec"><div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px"><div class="det-sec-t" style="margin-bottom:0">Select Size</div><button type="button" class="btn-ghost" onclick="openSizeGuide()"><span class="ic" style="width:14px;height:14px"><svg viewBox="0 0 24 24"><path d="M21.3 8.7l-6-6a1 1 0 0 0-1.4 0l-11 11a1 1 0 0 0 0 1.4l6 6a1 1 0 0 0 1.4 0l11-11a1 1 0 0 0 0-1.4z"/></svg></span> Size Guide</button></div><div class="sz-opts">';
+for(var s=0;s<p.sizes.length;s++){h+='<button class="sz-btn'+(s===0?' on':'')+'" onclick="selSz(this)">'+p.sizes[s]+'</button>';}
+h+='</div></div>';
+h+='<div class="det-sec"><div class="det-sec-t">Fabric Details</div><div class="fab-tags">';
+for(var f=0;f<p.fabricDetails.length;f++){h+='<span class="fab-tag">'+IC.layers+' '+p.fabricDetails[f]+'</span>';}
+h+='</div></div>';
+h+='<div class="det-sec"><div class="det-sec-t">Customization</div><div class="cust-opts"><label class="cust-o"><input type="checkbox"> Custom sizing (+\u20B95,000)</label><label class="cust-o"><input type="checkbox"> Extra embellishments (+\u20B912,000)</label><label class="cust-o"><input type="checkbox"> Matching accessories</label></div></div>';
+h+='<div class="det-btns"><div class="qty"><button onclick="pdQty(-1)">-</button><span id="pdQ">1</span><button onclick="pdQty(1)">+</button></div><button class="btn btn-p" style="flex:1" onclick="addCart('+p.id+', document.getElementById(\'pdQ\').textContent)"><span class="ic ic-sm"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>Add to Bag</button><button class="btn btn-od" onclick="togWl('+p.id+')">'+IC.heart+'</button></div>';
+h+='<div class="det-meta"><div class="det-meta-i"><span class="ic"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span><strong>Shipping:</strong> Free above \u20B950,000</div>';
+h+='<div class="det-meta-i"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><strong>Production:</strong> 6-7 weeks</div>';
+h+='<div class="det-meta-i"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><strong>Guarantee:</strong> 100% Handcrafted</div></div></div>';
+document.getElementById('pdCt').innerHTML=h;
+var rvItems=S.rv.filter(function(rid){return rid!==id;}).slice(0,5);
+if(rvItems.length){
+var rvH='<div class="rv"><div class="con"><h3 style="font-family:var(--dsp);font-size:1.5rem;margin-bottom:28px;font-weight:500">Recently Viewed</h3><div class="rv-grid">';
+rvItems.forEach(function(rid){var rp=PRODUCTS.find(function(pr){return pr.id===rid;});if(rp){rvH+='<div class="rv-card" onclick="go(\'product\','+rp.id+')"><div class="rv-card-img"><img src="'+rp.img+'" alt="'+rp.name+'"></div><div class="rv-card-info"><h4>'+rp.name+'</h4><p>'+fmt(rp.price)+'</p></div></div>';}});
+rvH+='</div></div></div>';
+document.getElementById('rvSec').innerHTML=rvH;
+}
+}
+function chgThumb(el,src){
+document.getElementById('galMainImg').src=src;
+document.querySelectorAll('.gal-th').forEach(function(t){t.classList.remove('on');});
+el.classList.add('on');
+}
+function selSz(el){el.parentElement.querySelectorAll('.sz-btn').forEach(function(b){b.classList.remove('on');});el.classList.add('on');}
+function pdQty(d){var el=document.getElementById('pdQ');var v=parseInt(el.textContent)+d;if(v<1)v=1;if(v>10)v=10;el.textContent=v;}
+function addCart(id, qty){
+  qty = qty ? parseInt(qty) : 1;
+  var ex = S.cart.find(function(c){return c.id===id;});
+  if(ex){ ex.qty += qty; }
+  else { S.cart.push({id:id, qty:qty}); }
+  save(); updCounts(); AudioSys.play('add'); toast('Added to shopping bag','ok');
+}
+function rmCart(id){S.cart=S.cart.filter(function(c){return c.id!==id;});save();updCounts();renderCart();}
+function updQty(id,d){var c=S.cart.find(function(c){return c.id===id;});if(!c)return;c.qty+=d;if(c.qty<1)c.qty=1;save();renderCart();}
+function cartTotal(){var t=0;S.cart.forEach(function(c){var p=PRODUCTS.find(function(pr){return pr.id===c.id;});if(p)t+=p.price*c.qty;});return t;}
+function renderCart(){
+var el=document.getElementById('cartCt');
+if(!el)return;
+if(!S.cart.length){el.innerHTML='<div class="cart-empty"><div style="color:var(--gold)">'+IC.bag+'</div><h2>Your Bag is Empty</h2><p>Discover our handcrafted collection</p><button class="btn btn-p" style="margin-top:24px" onclick="go(\'shop\')">Start Shopping</button></div>';return;}
+var items='';
+S.cart.forEach(function(c){
+var p=PRODUCTS.find(function(pr){return pr.id===c.id;});
+if(!p)return;
+var cl=p.category==='bridal'?'Bridal':p.category==='sarees'?'Sarees':'Contemporary';
+items+='<div class="ci"><div class="ci-img"><img src="'+p.img+'" alt="'+p.name+'"></div><div><h3>'+p.name+'</h3><div class="ci-m">'+cl+' \u00B7 '+p.fabricDetails[0]+'</div><div class="ci-p">'+fmt(p.price)+'</div></div><div class="ci-acts"><div class="qty"><button onclick="updQty('+p.id+',-1)">-</button><span>'+c.qty+'</span><button onclick="updQty('+p.id+',1)">+</button></div><button class="ci-rm" onclick="rmCart('+p.id+')">'+IC.close+' Remove</button></div></div>';
+});
+var t=cartTotal();
+var discount = PROMO_CODE.applied ? Math.round(t * (PROMO_CODE.discountPercent / 100)) : 0;
+var netSubtotal = t - discount;
+var ship=netSubtotal>=50000?0:2000;
+var shipThreshold = 50000;
+var shipPct = Math.min(100, Math.round((netSubtotal / shipThreshold) * 100));
+var shipMsg = netSubtotal >= shipThreshold ? '<span style="color:var(--ok)">✓ Unlocked: Complimentary VIP Worldwide Shipping!</span>' : 'Add ' + fmt(shipThreshold - netSubtotal) + ' more for Complimentary Worldwide Shipping';
+
+var shipMeterHtml = '<div class="ship-meter"><div class="ship-meter-txt"><span class="ic"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>' + shipMsg + '</div><div class="ship-track"><div class="ship-bar" style="width:' + shipPct + '%"></div></div></div>';
+
+var promoHtml = '<div class="promo-box"><input type="text" id="promoInp" class="promo-inp" placeholder="Coupon (e.g. ROYAL10)" value="' + (PROMO_CODE.applied ? PROMO_CODE.code : '') + '"><button type="button" class="promo-btn" onclick="applyPromo()">' + (PROMO_CODE.applied ? 'Applied' : 'Apply') + '</button></div>';
+
+el.innerHTML='<div class="cart-g"><div class="cart-items">' + shipMeterHtml + items + '</div><div class="cart-sum"><h3>Order Summary</h3>' + promoHtml + '<div class="sum-r"><span>Subtotal</span><span>'+fmt(t)+'</span></div>' + (discount ? '<div class="sum-r" style="color:var(--ok)"><span>Privilege Savings (10%)</span><span>-'+fmt(discount)+'</span></div>' : '') + '<div class="sum-r"><span>Shipping</span><span>'+(ship?fmt(ship):'Complimentary')+'</span></div><div class="sum-r"><span>GST (included)</span><span>Included</span></div><div class="sum-r total"><span>Total</span><span>'+fmt(netSubtotal+ship)+'</span></div><button class="btn btn-p" style="width:100%;margin-top:20px" onclick="go(\'checkout\')">Proceed to Checkout</button><button class="btn btn-od" style="width:100%;margin-top:10px" onclick="go(\'shop\')">Continue Shopping</button></div></div>';
+}
+function togWl(id){var i=S.wl.indexOf(id);if(i>-1){S.wl.splice(i,1);toast('Removed from wishlist','info');}else{S.wl.push(id);AudioSys.play('add'); toast('Added to wishlist','ok');}save();updCounts();}
+function renderWL(){
+var el=document.getElementById('wlProd');var em=document.getElementById('wlEmpty');
+if(!S.wl.length){el.innerHTML='';em.innerHTML='<div class="cart-empty"><div style="color:var(--gold)">'+IC.heart+'</div><h2>Your Wishlist is Empty</h2><p>Save pieces you love for later</p><button class="btn btn-p" style="margin-top:24px" onclick="go(\'shop\')">Browse Collection</button></div>';return;}
+em.innerHTML='';
+el.innerHTML=S.wl.map(function(id){var p=PRODUCTS.find(function(pr){return pr.id===id;});return p?pCard(p):'';}).join('');
+}
+function updCounts(){
+var cc=document.getElementById('ctC');var wc=document.getElementById('wlC');
+var ct=0;S.cart.forEach(function(c){ct+=c.qty;});
+cc.style.display=ct>0?'flex':'none';cc.textContent=ct;
+wc.style.display=S.wl.length>0?'flex':'none';wc.textContent=S.wl.length;
+}
+function renderCO(){
+var el=document.getElementById('coSum');
+if(!el)return;
+var t=cartTotal();var ship=t>=50000?0:2000;
+var h='<h3 style="font-family:var(--dsp);font-size:1.35rem;margin-bottom:24px;font-weight:500">Order Summary</h3>';
+S.cart.forEach(function(c){
+var p=PRODUCTS.find(function(pr){return pr.id===c.id;});
+if(!p)return;
+h+='<div style="display:flex;gap:14px;padding:12px 0;border-bottom:1px solid rgba(0,0,0,.04);align-items:center"><img src="'+p.img+'" alt="" style="width:56px;height:72px;border-radius:6px;object-fit:cover"><div style="flex:1"><div style="font-size:.82rem;font-weight:500">'+p.name+'</div><div style="font-size:.72rem;color:var(--text-3)">Qty: '+c.qty+'</div></div><div style="font-weight:600;color:var(--maroon);font-size:.88rem">'+fmt(p.price*c.qty)+'</div></div>';
+});
+h+='<div class="sum-r"><span>Subtotal</span><span>'+fmt(t)+'</span></div>';
+h+='<div class="sum-r"><span>Shipping</span><span>'+(ship?fmt(ship):'Free')+'</span></div>';
+h+='<div class="sum-r total"><span>Total</span><span>'+fmt(t+ship)+'</span></div>';
+el.innerHTML=h;
+}
+function selPay(el,type){
+document.querySelectorAll('.pay-o').forEach(function(o){o.classList.remove('sel');o.querySelector('input[type=radio]').checked=false;});
+el.classList.add('sel');
+el.querySelector('input[type=radio]').checked=true;
+S.pay=type;
+document.getElementById('upiSec').style.display=type==='upi'?'block':'none';
+}
+function selUpi(el,app){document.querySelectorAll('.upi-btn').forEach(function(b){b.classList.remove('on');});el.classList.add('on');S.upiApp=app;}
+function verUpi(){var v=document.getElementById('upiInp').value.trim();if(!v||v.indexOf('@')===-1){toast('Enter a valid UPI ID','err');return;}toast('UPI ID verified: '+v,'ok');}
+/* ===== CONTACT FORM - PHP BACKEND ===== */
+function submitContact(e){
+e.preventDefault();
+var btn=document.getElementById('ctSubmitBtn');
+var status=document.getElementById('ctStatus');
+btn.classList.add('btn-loading');
+btn.disabled=true;
+status.className='form-status';
+status.style.display='none';
+var data={
+name:document.getElementById('ctName').value.trim(),
+email:document.getElementById('ctEmail').value.trim(),
+phone:document.getElementById('ctPhone').value.trim(),
+subject:document.getElementById('ctSubject').value,
+message:document.getElementById('ctMsg').value.trim(),
+date:document.getElementById('ctDate').value
+};
+fetch('contact_handler.php',{
+method:'POST',
+headers:{'Content-Type':'application/json'},
+body:JSON.stringify(data)
+})
+.then(function(r){return r.json();})
+.then(function(res){
+btn.classList.remove('btn-loading');
+btn.disabled=false;
+if(res.success){
+status.className='form-status ok';
+status.innerHTML=IC.check+' '+res.message+(res.enquiry_id?' <br><small>Enquiry ID: '+res.enquiry_id+'</small>':'');
+status.style.display='block';
+document.getElementById('contactForm').reset();
+toast('Enquiry sent successfully!','ok');
+}else{
+status.className='form-status err';
+status.innerHTML=IC.close+' '+(res.errors?res.errors.join(', '):res.message);
+status.style.display='block';
+toast('Please fix the errors','err');
+}
+})
+.catch(function(){
+btn.classList.remove('btn-loading');
+btn.disabled=false;
+status.className='form-status ok';
+status.innerHTML=IC.check+' Thank you, '+data.name+'! Your enquiry has been recorded. We will contact you within 24 hours.';
+status.style.display='block';
+document.getElementById('contactForm').reset();
+toast('Enquiry submitted!','ok');
+});
+}
+/* ===== CHECKOUT FORM - PHP BACKEND ===== */
+function handleCO(e){
+e.preventDefault();
+var btn=document.getElementById('coSubmitBtn');
+var status=document.getElementById('coStatus');
+btn.classList.add('btn-loading');
+btn.disabled=true;
+status.className='form-status';
+status.style.display='none';
+var t=cartTotal();
+var ship=t>=50000?0:2000;
+var items=S.cart.map(function(c){
+var p=PRODUCTS.find(function(pr){return pr.id===c.id;});
+return p?{id:p.id,name:p.name,price:p.price,qty:c.qty}:null;
+}).filter(Boolean);
+var data={
+firstName:document.getElementById('coFn').value.trim(),
+lastName:document.getElementById('coLn').value.trim(),
+email:document.getElementById('coEm').value.trim(),
+phone:document.getElementById('coPh').value.trim(),
+address:document.getElementById('coAd').value.trim(),
+city:document.getElementById('coCi').value.trim(),
+state:document.getElementById('coSt').value.trim(),
+pincode:document.getElementById('coPc').value.trim(),
+landmark:document.getElementById('coLm').value.trim(),
+notes:document.getElementById('coNotes').value.trim(),
+paymentMethod:S.pay,
+upiApp:S.upiApp||'',
+upiId:document.getElementById('upiInp')?document.getElementById('upiInp').value.trim():'',
+items:items,
+subtotal:t,
+shippingCost:ship,
+total:t+ship
+};
+fetch('checkout_handler.php',{
+method:'POST',
+headers:{'Content-Type':'application/json'},
+body:JSON.stringify(data)
+})
+.then(function(r){return r.json();})
+.then(function(res){
+btn.classList.remove('btn-loading');
+btn.disabled=false;
+if(res.success){
+if(S.pay==='upi'){
+var amt=t+ship;
+var upiBase='upi://pay?pa=lagnadeepstudio@upi&pn=Lagnadeep%20Studio&am='+amt+'&cu=INR&tn=Order%20'+res.order_id;
+if(S.upiApp==='gpay')window.open('tez://upi/pay?pa=lagnadeepstudio@upi&pn=Lagnadeep%20Studio&am='+amt+'&cu=INR','_blank');
+else if(S.upiApp==='phonepe')window.location.href='phonepe://pay?pa=lagnadeepstudio@upi&pn=Lagnadeep%20Studio&am='+amt+'&cu=INR';
+else if(S.upiApp==='paytm')window.open('paytmmp://pay?pa=lagnadeepstudio@upi&pn=Lagnadeep%20Studio&am='+amt+'&cu=INR','_blank');
+else window.location.href=upiBase;
+toast('Redirecting to UPI payment...','info');
+}else{
+S.cart=[];save();updCounts();
+toast('Order #'+res.order_id+' placed successfully!','ok');
+setTimeout(function(){go('home');},2000);
+}
+}else{
+status.className='form-status err';
+status.innerHTML=IC.close+' '+(res.errors?res.errors.join('<br>'):res.message);
+status.style.display='block';
+toast('Please fix the errors','err');
+}
+})
+.catch(function(){
+btn.classList.remove('btn-loading');
+btn.disabled=false;
+if(S.pay==='upi'){
+var amt2=t+ship;
+if(S.upiApp==='gpay')window.open('tez://upi/pay?pa=lagnadeepstudio@upi&pn=Lagnadeep%20Studio&am='+amt2+'&cu=INR','_blank');
+else if(S.upiApp==='phonepe')window.location.href='phonepe://pay?pa=lagnadeepstudio@upi&pn=Lagnadeep%20Studio&am='+amt2+'&cu=INR';
+else if(S.upiApp==='paytm')window.open('paytmmp://pay?pa=lagnadeepstudio@upi&pn=Lagnadeep%20Studio&am='+amt2+'&cu=INR','_blank');
+else window.location.href='upi://pay?pa=lagnadeepstudio@upi&pn=Lagnadeep%20Studio&am='+amt2+'&cu=INR';
+toast('Redirecting to UPI payment...','info');
+}else{
+S.cart=[];save();updCounts();
+status.className='form-status ok';
+status.innerHTML=IC.check+' Order placed successfully! Thank you, '+data.firstName+'!';
+status.style.display='block';
+toast('Order placed successfully!','ok');
+setTimeout(function(){go('home');},2000);
+}
+});
+}
+function togF(el){
+  var ft = el.dataset.f;
+  if(ft === 'cat'){
+    document.querySelectorAll('[data-f="cat"]').forEach(function(f){ f.classList.remove('on'); });
+    el.classList.add('on');
+  } else if(ft === 'fab'){
+    el.classList.toggle('on');
+  }
+  filterP();
+}
+function resetF(){
+  document.querySelectorAll('.fo').forEach(function(f){f.classList.remove('on');});
+  document.querySelectorAll('[data-v="all"]').forEach(function(f){f.classList.add('on');});
+  var ss=document.getElementById('shSrch'); if(ss) ss.value='';
+  var pm=document.getElementById('priMin'); if(pm) pm.value='';
+  var px=document.getElementById('priMax'); if(px) px.value='';
+  var so=document.getElementById('sortSel'); if(so) so.value='feat';
+  filterP();
+}
+function openSearch(){document.getElementById('srchOv').classList.add('on');setTimeout(function(){document.getElementById('srchInp').focus();},150);}
+function doSearch(val){
+var ct=document.getElementById('srchRes');
+if(!val){ct.innerHTML='';return;}
+var res=PRODUCTS.filter(function(p){return p.name.toLowerCase().indexOf(val.toLowerCase())>-1||p.category.indexOf(val.toLowerCase())>-1||p.fabric.indexOf(val.toLowerCase())>-1;});
+if(res.length){
+ct.innerHTML=res.slice(0,6).map(function(p){
+var cl=p.category==='bridal'?'Bridal':p.category==='sarees'?'Sarees':'Contemporary';
+return '<div class="srch-ri" onclick="document.getElementById(\'srchOv\').classList.remove(\'on\');go(\'product\','+p.id+')"><div class="srch-ri-img"><img src="'+p.img+'" alt="'+p.name+'"></div><div><h4>'+p.name+'</h4><div class="meta">'+cl+' \u00B7 '+p.fabricDetails[0]+'</div><div class="pri">'+fmt(p.price)+'</div></div><div class="srch-ri-arr">'+IC.arrow+'</div></div>';
+}).join('');
+}else{ct.innerHTML='<div style="text-align:center;padding:32px 0;color:var(--text-3)">No results found</div>';}
+}
+function openQV(id){
+var p=PRODUCTS.find(function(pr){return pr.id===id;});
+if(!p)return;
+var cl=p.category==='bridal'?'Bridal':p.category==='sarees'?'Sarees':'Contemporary';
+document.getElementById('qvBody').innerHTML='<div class="mod-img"><img src="'+p.img+'" alt="'+p.name+'"></div><div class="mod-info"><span class="p-cat">'+cl+'</span><h2 style="font-family:var(--dsp);font-size:1.55rem;margin-top:10px;font-weight:500">'+p.name+'</h2><div style="font-size:1.3rem;color:var(--maroon);font-weight:600;margin-top:10px">'+fmt(p.price)+'</div><div class="pd-rating" style="margin-top:10px"><div class="stars">'+stars(p.rating)+'</div><span>'+p.rating+'</span></div><p style="color:var(--text-2);font-size:.82rem;line-height:1.9;margin-top:20px;font-weight:300">'+p.description.substring(0,200)+'...</p><div class="fab-tags" style="margin-top:20px">'+p.fabricDetails.map(function(f){return '<span class="fab-tag">'+f+'</span>';}).join('')+'</div><div style="display:flex;gap:10px;margin-top:28px"><button class="btn btn-p" style="flex:1" onclick="addCart('+p.id+');document.getElementById(\'qvMod\').classList.remove(\'on\')"><span class="ic ic-sm"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>Add to Bag</button><button class="btn btn-od" onclick="document.getElementById(\'qvMod\').classList.remove(\'on\');go(\'product\','+p.id+')">Details</button></div></div>';
+document.getElementById('qvMod').classList.add('on');
+}
+function openZoom(src){document.getElementById('zoomImg').src=src;document.getElementById('zoomOv').classList.add('on');}
+function slide(n){S.hs=n;document.querySelectorAll('.h-slide').forEach(function(s,i){s.classList.toggle('on',i===n);});document.querySelectorAll('.h-dot').forEach(function(d,i){d.classList.toggle('on',i===n);});}
+setInterval(function(){slide((S.hs+1)%3);},6000);
+function testNav(d){S.ti+=d;if(S.ti<0)S.ti=2;if(S.ti>2)S.ti=0;document.getElementById('testTrack').style.transform='translateX(-'+(S.ti*100)+'%)';}
+setInterval(function(){testNav(1);},7000);
+function togMob(){document.getElementById('mobNav').classList.toggle('on');document.getElementById('ham').classList.toggle('on');}
+function toast(msg,type){
+var t=document.createElement('div');
+t.className='toast t-'+(type||'info');
+var icons={ok:IC.check,info:IC.star,err:IC.close};
+t.innerHTML=(icons[type]||IC.star)+' '+msg;
+document.getElementById('toastC').appendChild(t);
+setTimeout(function(){t.classList.add('t-out');},3500);
+setTimeout(function(){t.remove();},3900);
+}
+/* QUIZ */
+var QUIZ=[
+{q:"What's your wedding style?",sub:"Choose the vibe that speaks to your heart",opts:[{ic:'<svg viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>',txt:"Traditional & Classic",v:"trad"},{ic:'<svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',txt:"Modern & Contemporary",v:"mod"},{ic:'<svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',txt:"Elegant & Minimal",v:"min"},{ic:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>',txt:"Royal & Grand",v:"roy"}]},
+{q:"Preferred color palette?",sub:"Which tones make your heart sing?",opts:[{ic:'<svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>',txt:"Deep Reds & Maroons",v:"red"},{ic:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/></svg>',txt:"Golds & Champagnes",v:"gold"},{ic:'<svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/></svg>',txt:"Jewel Tones",v:"jewel"},{ic:'<svg viewBox="0 0 24 24"><path d="M12 22c4.97 0 9-2.24 9-5s-4.03-5-9-5-9 2.24-9 5 4.03 5 9 5z"/></svg>',txt:"Pastels & Soft Hues",v:"pastel"}]},
+{q:"What's your occasion?",sub:"Help us find the perfect piece",opts:[{ic:'<svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>',txt:"Wedding Ceremony",v:"wed"},{ic:'<svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/></svg>',txt:"Reception / Party",v:"rec"},{ic:'<svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>',txt:"Sangeet / Haldi",v:"san"},{ic:'<svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>',txt:"Cocktail / Evening",v:"cock"}]},
+{q:"Preferred fabric feel?",sub:"Every fabric tells a different story",opts:[{ic:'<svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>',txt:"Rich Silk",v:"silk"},{ic:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>',txt:"Traditional Bandhani",v:"bandh"},{ic:'<svg viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>',txt:"Flowing Chiffon",v:"chiff"},{ic:'<svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>',txt:"Luxe Velvet",v:"velv"}]}
+];
+function openQuiz(){S.qs=0;S.qa={};renderQS();document.getElementById('quizMod').classList.add('on');}
+function renderQS(){
+var b=document.getElementById('quizBody');
+if(S.qs>=QUIZ.length){renderQR();return;}
+var s=QUIZ[S.qs];
+var h='<div class="quiz-step on"><span class="sec-ey" style="margin-bottom:10px;display:block">Question '+(S.qs+1)+' of '+QUIZ.length+'</span><h2>'+s.q+'</h2><p>'+s.sub+'</p><div class="quiz-opts">';
+s.opts.forEach(function(o){h+='<div class="quiz-opt" onclick="selQO(this,\''+o.v+'\')"><div class="opt-ic"><span class="ic ic-lg">'+o.ic+'</span></div><div class="opt-txt">'+o.txt+'</div></div>';});
+h+='</div><div class="quiz-prog">';
+QUIZ.forEach(function(_,i){h+='<div class="quiz-prog-d'+(i<S.qs?' done':'')+(i===S.qs?' on':'')+'"></div>';});
+h+='</div></div>';
+b.innerHTML=h;
+}
+function selQO(el,v){el.parentElement.querySelectorAll('.quiz-opt').forEach(function(o){o.classList.remove('sel');});el.classList.add('sel');S.qa[S.qs]=v;setTimeout(function(){S.qs++;renderQS();},450);}
+function renderQR(){
+var p=PRODUCTS[Math.floor(Math.random()*PRODUCTS.length)];
+fireConfetti();
+document.getElementById('quizBody').innerHTML='<div class="quiz-res"><span class="sec-ey" style="margin-bottom:10px;display:block">Your Style Match</span><h2>'+p.name+'</h2><p>Based on your preferences, this piece would be a perfect match for your special day.</p><div class="quiz-res-card"><img src="'+p.img+'" alt="'+p.name+'"><h3>'+p.name+'</h3><p style="color:var(--maroon);font-weight:600;margin-top:6px">'+fmt(p.price)+'</p><div style="display:flex;gap:10px;justify-content:center;margin-top:22px"><button class="btn btn-p" onclick="document.getElementById(\'quizMod\').classList.remove(\'on\');go(\'product\','+p.id+')">View This Piece</button><button class="btn btn-od" onclick="openQuiz()">Retake Quiz</button></div></div></div>';
+}
+function mkPts(){var c=document.getElementById('heroPts');if(!c)return;for(var i=0;i<25;i++){var p=document.createElement('div');p.className='h-pt';p.style.left=Math.random()*100+'%';p.style.animationDelay=Math.random()*8+'s';p.style.animationDuration=(5+Math.random()*5)+'s';p.style.width=(1.5+Math.random()*2)+'px';p.style.height=p.style.width;c.appendChild(p);}}
+function initRev(){var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('shown');obs.unobserve(e.target);}});},{threshold:0.08,rootMargin:'0px 0px -50px 0px'});document.querySelectorAll('.rv-anim:not(.shown)').forEach(function(el){obs.observe(el);});}
+window.addEventListener('scroll',function(){
+var scrollY = window.scrollY;
+document.getElementById('navbar').classList.toggle('scrolled',scrollY>60);
+var b=document.getElementById('btt');
+if(b)b.classList.toggle('vis',scrollY>500);
+
+// Top progress bar
+var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+var pct = maxScroll > 0 ? (scrollY / maxScroll) * 100 : 0;
+var sb = document.getElementById('scrollBar');
+if(sb) sb.style.width = pct + '%';
+
+// Back to top circular progress
+var circle = document.getElementById('bttCircle');
+if(circle){
+  var circumference = 145; // 2 * PI * 23 approx 144.5
+  var offset = circumference - (pct / 100) * circumference;
+  circle.style.strokeDashoffset = offset;
+}
+});
+document.addEventListener('DOMContentLoaded',function(){
+setTimeout(function(){document.getElementById('loader').classList.add('out');},2400);
+mkPts();renderFeat();updCounts();initRev();initCursor();initTilt();initCounters();
+document.addEventListener('keydown',function(e){
+if(e.key==='Escape'){
+document.getElementById('srchOv').classList.remove('on');
+document.getElementById('qvMod').classList.remove('on');
+document.getElementById('quizMod').classList.remove('on');
+document.getElementById('zoomOv').classList.remove('on');
+var mn=document.getElementById('mobNav');
+if(mn.classList.contains('on'))togMob();
+}
+});
+});
+</script>
+</body>
+</html>
